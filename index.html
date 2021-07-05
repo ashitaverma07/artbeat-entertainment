@@ -32,12 +32,26 @@
     /*section-1*/
     /* navbar */
 
-    .navbar{
+    .section-1{
+        background: url(https://image.freepik.com/free-vector/beautiful-purple-nature-landscape-with-mountains_1302-6317.jpg) no-repeat center center/cover;
+        height: 100vh;
+    }
+
+    .navbar:nth-child(1){
         border: 2.5px solid white;
+        border-bottom: 0;
+    }
+    .navbar:nth-child(2){
+        border: 2.5px solid white;
+        border-top: 0;
     }
 
     .navbar-nav {
         width: 40%;
+    }
+
+    li{
+        list-style: none
     }
 
     .navbar-icons {
@@ -52,7 +66,7 @@
         bottom: 0px;
         left: 0;
         transition: 300ms;
-        height: 1px;
+        height: 2px;
         content: "";
         position: absolute;
         background-color: #bebebe;
@@ -68,6 +82,15 @@
         bottom: 0px;
         width: 100%;
         opacity: 1;
+    }
+
+    .menuNavbar{
+        background-color:#4C4C4C;
+    }
+
+    .navbar-toggler:focus{
+        /* box-shadow: none; */
+        box-shadow: 0 0 0 0.05rem
     }
 
     /*section-2*/
@@ -94,7 +117,7 @@
 
         .nav-link-ltr:hover::before {
             bottom: 0px;
-            width: 7%;
+            width: 100%;
             opacity: 1;
         }
 
@@ -118,61 +141,84 @@
 <body>
     <!--section-1-->
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="navbarBrand">
-                <img src="data:image/webp;base64,UklGRtYCAABXRUJQVlA4TMkCAAAvpkAHEL/BoG0kR+ZP93q/+ydhkG2k+rudwisM4Q2kbRP/ls87hm3bOJKu33fvP+zXAZzfj4YCcUAEQbAgFgrEg2BDTGwIIQoqgornB9ARnPA/cEA4q4/GLMKO2aj3jGIWszGL0ZgFZNu2rbbN2YYriGJdQ0AKihpDmfz/v9Z7QHIy7uhjRP8duG3jSPK1LbOnzM62L5DMPN+9dIdD97LL5xSvLNcDlHxaLylSWXUw0q0oRpndY0TuZxF6P2BUHuLzusXI3FFkcg2Rz+brOjJ/1Ive+HX+9dWgj8v/rEVnfDn/yw9jhTVFJItB5/z3m8qwYGotUHDJPZBQBXiiUsrVZTCqFNmMiJxvgkLrE+7ra+60L1ThKhgGySDhSLdvSmKCj8zmEShzGJzPv9VGOS8OqJlAEYRtgpRJCqOzkhZKlxjCiSwL8AZAaXJjoze6ZXoJsHfCvhQo8hmAVMqItMyPue15ebUwSoWwKkcNWqCReO5bmzzZhEbfhcszSb+CT++dDTVByiABwA3YnnJiLIlI4UqQAmEsJioZUzMYTIxGg1JRzacrEljyk8iExgS2QFIAfipHC2UmW+vIK3KQ280mwVONpwT0ql2rDI1Hcnu04xC5GFSzUmQNHwCRxvGhUZo9H8rc6kyY+GNMUBEm2Yh434nM4JGvXUNkazRLzcqeL7CK3H4FJB+Fx9DV+0ScrEX2CnvvE3qHDYnjq9gL2xFMbJaOhGpx7vPK0LDsL3xZuZKqGbAH/CiS/Zjz9V6cPMK+ckxja5OIMhrAKcN5Eou3C1ykxUUAcAZKHvXRHJwKzSkjRcNqVso93KgnsSlc7JbHQ1zCRvDoyYYS33AlR6RpoPHKtZfPSrZsB4s+8NNQbiB/2jeQwzKSt+PReVy8G/9wE81Hxf+0B28iWvXWr35Fkcpy86b9etssKV6Z5zev/enUv97kC4pPCAA="
-                    alt="" srcset="" class="brandImg">
+    <div class="section-1">
+        <nav class="navbar navbar-expand-lg navbar-dark mx-auto">
+            <div class="container-fluid">
+                <div class="navbarBrand">
+                    <img src="data:image/webp;base64,UklGRtYCAABXRUJQVlA4TMkCAAAvpkAHEL/BoG0kR+ZP93q/+ydhkG2k+rudwisM4Q2kbRP/ls87hm3bOJKu33fvP+zXAZzfj4YCcUAEQbAgFgrEg2BDTGwIIQoqgornB9ARnPA/cEA4q4/GLMKO2aj3jGIWszGL0ZgFZNu2rbbN2YYriGJdQ0AKihpDmfz/v9Z7QHIy7uhjRP8duG3jSPK1LbOnzM62L5DMPN+9dIdD97LL5xSvLNcDlHxaLylSWXUw0q0oRpndY0TuZxF6P2BUHuLzusXI3FFkcg2Rz+brOjJ/1Ive+HX+9dWgj8v/rEVnfDn/yw9jhTVFJItB5/z3m8qwYGotUHDJPZBQBXiiUsrVZTCqFNmMiJxvgkLrE+7ra+60L1ThKhgGySDhSLdvSmKCj8zmEShzGJzPv9VGOS8OqJlAEYRtgpRJCqOzkhZKlxjCiSwL8AZAaXJjoze6ZXoJsHfCvhQo8hmAVMqItMyPue15ebUwSoWwKkcNWqCReO5bmzzZhEbfhcszSb+CT++dDTVByiABwA3YnnJiLIlI4UqQAmEsJioZUzMYTIxGg1JRzacrEljyk8iExgS2QFIAfipHC2UmW+vIK3KQ280mwVONpwT0ql2rDI1Hcnu04xC5GFSzUmQNHwCRxvGhUZo9H8rc6kyY+GNMUBEm2Yh434nM4JGvXUNkazRLzcqeL7CK3H4FJB+Fx9DV+0ScrEX2CnvvE3qHDYnjq9gL2xFMbJaOhGpx7vPK0LDsL3xZuZKqGbAH/CiS/Zjz9V6cPMK+ckxja5OIMhrAKcN5Eou3C1ykxUUAcAZKHvXRHJwKzSkjRcNqVso93KgnsSlc7JbHQ1zCRvDoyYYS33AlR6RpoPHKtZfPSrZsB4s+8NNQbiB/2jeQwzKSt+PReVy8G/9wE81Hxf+0B28iWvXWr35Fkcpy86b9etssKV6Z5zev/enUv97kC4pPCAA="
+                        alt="" srcset="" class="brandImg">
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-between mx-0 mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-ltr" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-ltr" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-ltr" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-ltr" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-icons justify-content-evenly mx-0 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav justify-content-between mx-0 mb-2 mb-lg-0 ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-ltr" href="#">Contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-icons justify-content-evenly mx-0 mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <ion-icon name="logo-youtube"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        </nav>
+        <nav class="navbar navbar-dark py-2 mx-auto menuNavbar">
+            <button class="navbar-toggler ms-auto mx-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+            aria-label="Toggle navigation">
+            Menu
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent1">
+            <ul class="navbar-nav justify-content-between mx-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+        </nav>
+    </div>
     <!--section-2-->
     <!--section-3-->
     <!--section-4-->
