@@ -25,30 +25,45 @@
 </head>
 
 <style>
-    body{
-        background-color:rgb(99, 99, 99)
+    body {
+        background-color: rgb(99, 99, 99)
     }
+
     /*section-1*/
-    .brandImg{
-        background: url(data:image/webp;base64,UklGRtYCAABXRUJQVlA4TMkCAAAvpkAHEL/BoG0kR+ZP93q/+ydhkG2k+rudwisM4Q2kbRP/ls87hm3bOJKu33fvP+zXAZzfj4YCcUAEQbAgFgrEg2BDTGwIIQoqgornB9ARnPA/cEA4q4/GLMKO2aj3jGIWszGL0ZgFZNu2rbbN2YYriGJdQ0AKihpDmfz/v9Z7QHIy7uhjRP8duG3jSPK1LbOnzM62L5DMPN+9dIdD97LL5xSvLNcDlHxaLylSWXUw0q0oRpndY0TuZxF6P2BUHuLzusXI3FFkcg2Rz+brOjJ/1Ive+HX+9dWgj8v/rEVnfDn/yw9jhTVFJItB5/z3m8qwYGotUHDJPZBQBXiiUsrVZTCqFNmMiJxvgkLrE+7ra+60L1ThKhgGySDhSLdvSmKCj8zmEShzGJzPv9VGOS8OqJlAEYRtgpRJCqOzkhZKlxjCiSwL8AZAaXJjoze6ZXoJsHfCvhQo8hmAVMqItMyPue15ebUwSoWwKkcNWqCReO5bmzzZhEbfhcszSb+CT++dDTVByiABwA3YnnJiLIlI4UqQAmEsJioZUzMYTIxGg1JRzacrEljyk8iExgS2QFIAfipHC2UmW+vIK3KQ280mwVONpwT0ql2rDI1Hcnu04xC5GFSzUmQNHwCRxvGhUZo9H8rc6kyY+GNMUBEm2Yh434nM4JGvXUNkazRLzcqeL7CK3H4FJB+Fx9DV+0ScrEX2CnvvE3qHDYnjq9gL2xFMbJaOhGpx7vPK0LDsL3xZuZKqGbAH/CiS/Zjz9V6cPMK+ckxja5OIMhrAKcN5Eou3C1ykxUUAcAZKHvXRHJwKzSkjRcNqVso93KgnsSlc7JbHQ1zCRvDoyYYS33AlR6RpoPHKtZfPSrZsB4s+8NNQbiB/2jeQwzKSt+PReVy8G/9wE81Hxf+0B28iWvXWr35Fkcpy86b9etssKV6Z5zev/enUv97kC4pPCAA=) no-repeat center center/contain;
+    /* navbar */
+
+    .navbar-nav {
+        width: 40%;
     }
 
-    .navbar-ul {
-        list-style: none;
+    .navbar-icons {
+        display: flex;
     }
 
-    .navbar-li{
-        text-decoration: none;
+    .nav-link {
+        position: relative;
     }
 
-    .navLink{
-        text-decoration: none;
-        color: white;
-        transition:all 0.25s;
+    .nav-link::before {
+        bottom: 0px;
+        left: 0;
+        transition: 300ms;
+        height: 1px;
+        content: "";
+        position: absolute;
+        background-color: #bebebe;
     }
-    .navLink:hover{
-        text-decoration: none;
-        color: rgb(155, 155, 155);
+
+    .nav-link-ltr::before {
+        width: 100%;
+        bottom: -5px;
+        opacity: 0;
+    }
+
+    .nav-link-ltr:hover::before {
+        bottom: 0px;
+        width: 100%;
+        opacity: 1;
     }
 
     /*section-2*/
@@ -62,7 +77,9 @@
 
     @media only screen and (max-width: 1200px) {}
 
-    @media only screen and (max-width: 992px) {}
+    @media only screen and (max-width: 992px) {
+        
+    }
 
     @media only screen and (max-width: 768px) {}
 
@@ -78,51 +95,60 @@
 <body>
     <!--section-1-->
     <!-- navbar -->
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-2 brandImg">
-                </div>
-                <div class="col-lg-8">
-                    <div class="navItems">
-                        <ul class="navbar-ul row justify-content-between my-0">
-                            <li class="navbar-li col-2 text-center">
-                                <a href="" class="navLink">Home</a>
-                            </li>
-                            <li class="navbar-li col-2 text-center">
-                                <a href="" class="navLink">About</a>
-                            </li>
-                            <li class="navbar-li col-2 text-center">
-                                <a href="" class="navLink">Portfolio</a>
-                            </li>
-                            <li class="navbar-li col-2 text-center">
-                                <a href="" class="navLink">Services</a>
-                            </li>
-                            <li class="navbar-li col-2 text-center">
-                                <a href="" class="navLink">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 px-0">
-                    <div class="container px-0">
-                        <div class="row px-0">
-                            <a href = "#" class="col-3 navLink">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                            </a>
-                            <a href="#" class="col-3 navLink">
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </a>
-                            <a href="#" class="col-3 navLink">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </a>
-                            <a href="#" class="col-3 navLink">
-                                <ion-icon name="logo-youtube"></ion-icon>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbarBrand">
+                <img src="data:image/webp;base64,UklGRtYCAABXRUJQVlA4TMkCAAAvpkAHEL/BoG0kR+ZP93q/+ydhkG2k+rudwisM4Q2kbRP/ls87hm3bOJKu33fvP+zXAZzfj4YCcUAEQbAgFgrEg2BDTGwIIQoqgornB9ARnPA/cEA4q4/GLMKO2aj3jGIWszGL0ZgFZNu2rbbN2YYriGJdQ0AKihpDmfz/v9Z7QHIy7uhjRP8duG3jSPK1LbOnzM62L5DMPN+9dIdD97LL5xSvLNcDlHxaLylSWXUw0q0oRpndY0TuZxF6P2BUHuLzusXI3FFkcg2Rz+brOjJ/1Ive+HX+9dWgj8v/rEVnfDn/yw9jhTVFJItB5/z3m8qwYGotUHDJPZBQBXiiUsrVZTCqFNmMiJxvgkLrE+7ra+60L1ThKhgGySDhSLdvSmKCj8zmEShzGJzPv9VGOS8OqJlAEYRtgpRJCqOzkhZKlxjCiSwL8AZAaXJjoze6ZXoJsHfCvhQo8hmAVMqItMyPue15ebUwSoWwKkcNWqCReO5bmzzZhEbfhcszSb+CT++dDTVByiABwA3YnnJiLIlI4UqQAmEsJioZUzMYTIxGg1JRzacrEljyk8iExgS2QFIAfipHC2UmW+vIK3KQ280mwVONpwT0ql2rDI1Hcnu04xC5GFSzUmQNHwCRxvGhUZo9H8rc6kyY+GNMUBEm2Yh434nM4JGvXUNkazRLzcqeL7CK3H4FJB+Fx9DV+0ScrEX2CnvvE3qHDYnjq9gL2xFMbJaOhGpx7vPK0LDsL3xZuZKqGbAH/CiS/Zjz9V6cPMK+ckxja5OIMhrAKcN5Eou3C1ykxUUAcAZKHvXRHJwKzSkjRcNqVso93KgnsSlc7JbHQ1zCRvDoyYYS33AlR6RpoPHKtZfPSrZsB4s+8NNQbiB/2jeQwzKSt+PReVy8G/9wE81Hxf+0B28iWvXWr35Fkcpy86b9etssKV6Z5zev/enUv97kC4pPCAA="
+                    alt="" srcset="" class="brandImg">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav justify-content-between mx-0 mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-icons justify-content-evenly mx-0 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
     <!--section-2-->
     <!--section-3-->
     <!--section-4-->
