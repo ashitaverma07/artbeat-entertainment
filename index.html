@@ -32,16 +32,17 @@
     /*section-1*/
     /* navbar */
 
-    .section-1{
+    .section-1 {
         background: url(https://image.freepik.com/free-vector/beautiful-purple-nature-landscape-with-mountains_1302-6317.jpg) no-repeat center center/cover;
-        height: 100vh;
+        height: 80vh;
     }
 
-    .navbar:nth-child(1){
+    .navbar:nth-child(1) {
         border: 2.5px solid white;
         border-bottom: 0;
     }
-    .navbar:nth-child(2){
+
+    .navbar:nth-child(2) {
         border: 2.5px solid white;
         border-top: 0;
     }
@@ -50,7 +51,7 @@
         width: 40%;
     }
 
-    li{
+    li {
         list-style: none
     }
 
@@ -84,14 +85,30 @@
         opacity: 1;
     }
 
-    .menuNavbar{
-        background-color:#4C4C4C;
+    .menuNavbar {
+        background-color: #4C4C4C;
     }
 
-    .navbar-toggler:focus{
+    .navbar-toggler:focus {
         /* box-shadow: none; */
         box-shadow: 0 0 0 0.05rem
     }
+
+    .coverPage {
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .coverContainer{
+        width: 60vw;
+    }
+
+    .coverRow{
+        height: 60vh;
+    }
+
 
     /*section-2*/
     /*section-3*/
@@ -121,10 +138,14 @@
             opacity: 1;
         }
 
-        .navbar-icons{
+        .navbar-icons {
             display: none;
         }
-        
+
+        .innerCoverContainer {
+            text-align: center;
+        }
+
     }
 
     @media only screen and (max-width: 768px) {}
@@ -193,31 +214,49 @@
         </nav>
         <nav class="navbar navbar-dark py-2 mx-auto menuNavbar">
             <button class="navbar-toggler ms-auto mx-5" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-            aria-label="Toggle navigation">
-            Menu
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent1">
-            <ul class="navbar-nav justify-content-between mx-5 mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Contact</a>
-                </li>
-            </ul>
-        </div>
+                data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent1">
+                <ul class="navbar-nav justify-content-between mx-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-ltr" href="#" style="display: inline-block;">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <div class="coverPage">
+            <div class="container coverContainer">
+                <div class="row coverRow">
+                    <div class="col-lg-6 col-12">
+                        <p class="coverText mt-0 mb-4">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <h1 class="coverHeadline pt-3 pb-2">
+                            Lorem, ipsum.
+                        </h1>
+                        <a href="#" class="coverButton mt-3">
+                            See more about
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-0"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--section-2-->
     <!--section-3-->
