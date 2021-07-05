@@ -32,6 +32,10 @@
     /*section-1*/
     /* navbar */
 
+    .navbar{
+        border: 2.5px solid white;
+    }
+
     .navbar-nav {
         width: 40%;
     }
@@ -78,6 +82,25 @@
     @media only screen and (max-width: 1200px) {}
 
     @media only screen and (max-width: 992px) {
+        .navbar-nav {
+            width: auto;
+        }
+
+        .nav-link-ltr::before {
+            width: 0%;
+            bottom: -5px;
+            opacity: 0;
+        }
+
+        .nav-link-ltr:hover::before {
+            bottom: 0px;
+            width: 7%;
+            opacity: 1;
+        }
+
+        .navbar-icons{
+            display: none;
+        }
         
     }
 
@@ -104,6 +127,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
+                Menu
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
