@@ -101,28 +101,75 @@
         justify-content: center; */
     }
 
-    .coverPage{
-        padding: 12vh 0 40vh 0;
+    .coverPage {
+        padding: 12vh 0 30vh 0;
     }
 
-    .coverContainer{
+    .coverContainer {
         /* width: 60vw; */
     }
 
-    .coverRow{
+    .coverRow {
         /* height: 60vh; */
     }
 
-    .coverButton{
-        text-decoration: none;
-        color: inherit;
+    .coverContent:after{
+        content: "";
+        background: url(https://source.unsplash.com/300x300) no-repeat center center/cover;
+        height: 100px;
+        width: 100px;
+        z-index: 2;
     }
 
-    .coverButton:hover{
+    .buttonColumn{
+        display: inline;
+    }
+
+    .coverButton {
+        text-decoration: none;
+        color: inherit;
+        position: relative;
+    }
+
+    .coverButton:before{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 60%;
+        width: 20%;
+        background-color:rgba(255, 255, 0, 0);
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        content: "";
+        transition: all 0.4s ease-in;
+    }
+
+    .coverButton:hover:before{
+        height: 100%;
+        width: 100%;
+    }
+
+    .coverButton:after{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 60%;
+        width: 20%;
+        background-color:rgba(255, 255, 0, 0);
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+        content: "";
+        transition: all 0.4s ease-in;
+    }
+
+    .coverButton:hover:after{
+        height: 100%;
+        width: 100%;
+    }
+    .coverButton:hover {
         text-decoration: none;
         color: #212224;
     }
-
 
     /*section-2*/
     /*section-3*/
@@ -227,7 +274,7 @@
             </div>
         </nav>
         <nav class="navbar navbar-dark py-2 mx-auto menuNavbar">
-            <button class="navbar-toggler ms-auto mx-5" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler ms-auto mx-1" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
                 aria-label="Toggle navigation">
                 Menu
@@ -256,22 +303,26 @@
         <div class="coverPage">
             <div class="container coverContainer">
                 <div class="row coverRow">
-                    <div class="col-lg-6 col-12">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-6 col-12 coverContent">
                         <p class="coverText mt-0 mb-4">
                             Lorem ipsum dolor sit amet.
                         </p>
                         <h1 class="coverHeadline pt-3 pb-2">
                             Lorem, ipsum.
                         </h1>
-                        <a href="#" class="coverButton my-5">
-                            See more about
-                        </a>
+                        <div class="buttonColumn px-2 py-2">
+                            <a href="#" class="coverButton px-4 py-2">
+                                See more about us
+                            </a>
+                        </div
                     </div>
                     <!-- <div class="col-lg-6 col-0"></div> -->
                 </div>
             </div>
         </div>
     </div>
+>
     <!--section-2-->
     <!--section-3-->
     <!--section-4-->
