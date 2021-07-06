@@ -139,33 +139,73 @@
         margin-right: 12.5rem;
     }
 
-    .coverContent{
-        animation: animationForCover 5s ease;
+    .coverText{
+        animation: animationForCoverText;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+
+    @keyframes animationForCoverText{
+        0%{
+            bottom: -45vh;
+            opacity: 0;
+        }
+        7.5%{
+            bottom: 0;
+            opacity: 1;
+        }
+        100%{
+            bottom: 0;
+            opacity: 1;
+        }
+    }
+
+    .coverHeadline{
+        position: relative;
+        font-size: 3.5rem;
+        font-weight: bold;
+        animation: animationForCoverHeadline;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
     }
 
-    @keyframes animationForCover{
-        0% {
+    @keyframes animationForCoverHeadline{
+        0%{
+            bottom: -30vh;
             opacity: 0;
-            bottom: -10rem;
         }
-        10% {
-            opacity: 1;
+        7.5%{
             bottom: 0;
+            opacity: 1;
         }
-        100% {
-            opacity: 1;
+        100%{
             bottom: 0;
+            opacity: 1;
         }
     }
 
-    .buttonColumn {
+    .buttonColumn{
+        position: relative;
         display: inline;
+        animation: animationForButtonColumn;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
     }
 
-    .coverHeadline {
-        font-size: 3.5rem;
-        font-weight: bold;
+    @keyframes animationForButtonColumn{
+        0%{
+            bottom: -20vh;
+            opacity: 0;
+        }
+        7.5%{
+            bottom: 0;
+            opacity: 1;
+        }
+        100%{
+            bottom: 0;
+            opacity: 1;
+        }
     }
 
     .coverButton {
