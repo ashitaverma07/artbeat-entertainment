@@ -111,9 +111,22 @@
     }
 
     .navbar-toggler:focus {
-        /* box-shadow: none; */
         box-shadow: 0 0 0 0.05rem
     }
+
+    .navItem{
+        text-decoration: none;
+        color: white;
+    }
+
+    .navItem:hover{
+        background-color: #e2e0e0;
+        color: black!important;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    /* navbar ends */
 
     .coverPage {
         padding: 12vh 0 30vh 0;
@@ -122,7 +135,6 @@
     }
 
     .coverContainer {
-        /* width: 60vw; */
         margin-left: 12.5rem;
         margin-right: 12.5rem;
     }
@@ -330,27 +342,15 @@
         <nav class="navbar navbar-dark py-2 menuNavbar">
             <button class="navbar-toggler ms-auto mx-1" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
-                <span class="navbar-toggler-icon"></span>
+                aria-label="Toggle navigation">Menu<span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent1">
                 <ul class="navbar-nav justify-content-between ms-2 me-5 mb-2 mb-lg-0">
-                    <li class="navItem my-2">
-                        <a class="navLink navLink-ltr" href="#" style="display: inline-block;">Home</a>
-                    </li>
-                    <li class="navItem my-2">
-                        <a class="navLink navLink-ltr" href="#" style="display: inline-block;">About</a>
-                    </li>
-                    <li class="navItem my-2">
-                        <a class="navLink navLink-ltr" href="#" style="display: inline-block;">Portfolio</a>
-                    </li>
-                    <li class="navItem my-2">
-                        <a class="navLink navLink-ltr" href="#" style="display: inline-block;">Services</a>
-                    </li>
-                    <li class="navItem my-2">
-                        <a class="navLink navLink-ltr" href="#" style="display: inline-block;">Contact</a>
-                    </li>
+                        <a class="navItem px-2 py-2" href="#">Home</a>
+                        <a class="navItem px-2 py-2" href="#">About</a>
+                        <a class="navItem px-2 py-2" href="#">Portfolio</a>
+                        <a class="navItem px-2 py-2" href="#">Services</a>
+                        <a class="navItem px-2 py-2" href="#">Contact</a>
                 </ul>
             </div>
         </nav>
