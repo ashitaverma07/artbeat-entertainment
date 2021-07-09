@@ -409,28 +409,41 @@
         padding-bottom: 15vh;
     }
 
-    .section-5 .container{
+    .section-5 .container {
         width: 70%;
     }
 
-    .section-5-images{
+    .section-5-images {
         width: 100%;
     }
 
-    #section-5-image-1{
+    #section-5-image-1 {
         transform: translateY(30%);
     }
-    #section-5-image-2{
+
+    #section-5-image-2 {
         transform: translateY(20%);
     }
-    #section-5-image-3{
+
+    #section-5-image-3 {
         transform: translateY(10%);
     }
-    #section-5-image-4{
+
+    #section-5-image-4 {
         transform: translateY(0%);
     }
 
+    .aboutCreator{
+        position: absolute;
+        transition: 0.25s;
+        bottom: -215px;
+        opacity: 0;
+    }
+
     .transitionForAboutCreator{
+        transition: 0.25s;
+        bottom: 0px;
+        opacity: 1;
     }
 
     /*section-6*/
@@ -722,18 +735,70 @@
         <h2 class="play">OUR TEAM</h2>
         <div class="container">
             <div class="row justify-content-between text-center">
-                <div class="col-3 px-0" id="section-5-image-1">
-                    <img class="section-5-images" src="https://preview.colorlib.com/theme/videograph/img/team/team-1.jpg.webp" alt="">
+                <div class="col-3 px-0 imageColumn" id="section-5-image-1">
+                    <div class="aboutCreator">
+                        <div class="card">
+                            <div class="card-header">
+                                Quote
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>A well-known quote, contained in a blockquote element.</p>
+                                    <footer class="blockquote-footer">Someone famous in <cite
+                                            title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3 px-0" id="section-5-image-2">
-                    <img class="section-5-images" src="https://preview.colorlib.com/theme/videograph/img/team/team-2.jpg" alt="">
+                <div class="col-3 px-0 imageColumn" id="section-5-image-2">
+                    <div class="aboutCreator">
+                        <div class="card">
+                            <div class="card-header">
+                                Quote
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>A well-known quote, contained in a blockquote element.</p>
+                                    <footer class="blockquote-footer">Someone famous in <cite
+                                            title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="w-100 d-lg-none"></div>
-                <div class="col-3 px-0" id="section-5-image-3">
-                    <img class="section-5-images" src="https://preview.colorlib.com/theme/videograph/img/team/team-3.jpg" alt="">
+                <div class="col-3 px-0 imageColumn" id="section-5-image-3">
+                    <div class="aboutCreator">
+                        <div class="card">
+                            <div class="card-header">
+                                Quote
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>A well-known quote, contained in a blockquote element.</p>
+                                    <footer class="blockquote-footer">Someone famous in <cite
+                                            title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3 px-0" id="section-5-image-4">
-                    <img class="section-5-images" src="https://preview.colorlib.com/theme/videograph/img/team/team-4.jpg" alt="">
+                <div class="col-3 px-0 imageColumn" id="section-5-image-4">
+                    <div class="aboutCreator">
+                        <div class="card">
+                            <div class="card-header">
+                                Quote
+                            </div>
+                            <div class="card-body">
+                                <blockquote class="blockquote mb-0">
+                                    <p>A well-known quote, contained in a blockquote element.</p>
+                                    <footer class="blockquote-footer">Someone famous in <cite
+                                            title="Source Title">Source Title</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -744,6 +809,14 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Bootstrap JavaScript -->
+    <script>
+        $(".imageColumn").mouseover(function(){
+            $(".aboutCreator").addClass("transitionForAboutCreator");
+        })
+        $(".imageColumn").mouseout(function(){
+            $(".aboutCreator").removeClass("transitionForAboutCreator");
+        })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
