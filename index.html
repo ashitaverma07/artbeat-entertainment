@@ -272,6 +272,340 @@
     }
 
     /*section-2*/
+
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+    @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .services_container {
+        background: rgb(16, 0, 40);
+        padding: 6rem 7rem;
+    }
+
+    .services_main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 0px;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .div3 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .div4 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .div5 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .div1 h3 {
+        color: #fff;
+        display: block;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    .div1 h1 {
+        color: #fff;
+        font-weight: 800;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 25px;
+        font-size: 36px;
+        font-family: "Play", sans-serif;
+    }
+
+    .div1 h1::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 5px;
+        width: 70px;
+        background: #00bfe7;
+        content: "";
+    }
+
+    .div1 p {
+        font-size: 16px;
+        font-family: "Josefin Sans", sans-serif;
+        color: #adadad;
+        font-weight: 600;
+        line-height: 26px;
+        margin: 45px 0 45px 0;
+    }
+
+    .div1 button {
+        display: inline-block;
+        font-size: 15px;
+        font-family: "Play", sans-serif;
+        font-weight: 700;
+        padding: 14px 32px 12px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .div1 button::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 30px;
+        width: 30px;
+        border-left: 3px solid #00bfe7;
+        border-top: 3px solid #00bfe7;
+        content: "";
+        z-index: -1;
+        -webkit-transition: all, 0.7s;
+        -o-transition: all, 0.7s;
+        transition: all, 0.7s;
+    }
+
+    .div1 button::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 30px;
+        width: 30px;
+        border-right: 3px solid #00bfe7;
+        border-bottom: 3px solid #00bfe7;
+        content: "";
+        z-index: -1;
+        -webkit-transition: all, 0.7s;
+        -o-transition: all, 0.7s;
+        transition: all, 0.7s;
+    }
+
+    .div1 button:hover::before,
+    .div1 button:hover::after {
+        width: 233.5px;
+        height: 46px;
+    }
+
+    .div2 span,
+    .div3 span,
+    .div4 span,
+    .div5 span {
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        margin: 0;
+        padding: 50px 25px 20px 30px;
+        position: relative;
+    }
+
+    .span2:before,
+    .span3:before,
+    .span4:before,
+    .span5:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 3px solid #00bfe7;
+        position: absolute;
+        left: 5px;
+        top: 15px;
+        animation-name: animationForRemovingRotation;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    .animated:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 3px solid #00bfe7;
+        position: absolute;
+        left: 5px;
+        top: 15px;
+        animation-name: animationForRotation;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes animationForRotation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(45deg);
+        }
+    }
+
+    .hovered {
+        transform: rotate(45deg);
+    }
+
+    .removeAnimation {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 3px solid #00bfe7;
+        position: absolute;
+        left: 0;
+        top: 15px;
+        animation-name: animationForRemovingRotation;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes animationForRemovingRotation {
+        from {
+            transform: rotate(45deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+            /* opacity: 0; */
+        }
+    }
+
+    .square {
+        width: 90px;
+        height: 90px;
+        border: 3px solid #00bfe7;
+
+    }
+
+    .div2 p,
+    .div3 p,
+    .div4 p,
+    .div5 p {
+        font-size: 18px;
+        color: #adadad;
+        font-weight: 800;
+        line-height: 26px;
+        margin: 0 0 15px 0;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    .div2 h1,
+    .div3 h1,
+    .div4 h1,
+    .div5 h1 {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 50px;
+        margin-bottom: 18px;
+        font-family: "Play", sans-serif;
+    }
+
+    .div4,
+    .div5 {
+        margin-top: 25px;
+    }
+
+    @media only screen and (max-width: 1400px) {}
+
+    @media only screen and (max-width: 1200px) {
+        .services_container {
+            padding: 5rem 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        .services_container {
+            padding: 6rem 8rem;
+        }
+
+        .services_main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 2.5rem;
+            grid-row-gap: 0px;
+        }
+
+        .div1 {
+            grid-area: 1 / 1 / 2 / 3;
+            margin-bottom: 5rem;
+        }
+
+        .div2 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .div3 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .div4 {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        .div5 {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .services_container {
+            padding: 5rem 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        .services_container {
+            padding: 5rem 1rem;
+        }
+
+        .services_main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1.5fr repeat(4, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 20px;
+        }
+
+        .div1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .div2 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .div3 {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        .div4 {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+
+        .div5 {
+            grid-area: 5 / 1 / 6 / 2;
+        }
+    }
+
     /*section-3*/
     /*section-4*/
 
@@ -669,11 +1003,235 @@
             width: 80%;
         }
     }
+
+    /*section-8*/
+
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+    @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .footer_container {
+        color: white;
+        background-color: #0a0119;
+        padding: 3rem 6rem 1rem 6rem;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-row-gap: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .column1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .column2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .column3 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .column4 {
+        grid-area: 1 / 4 / 2 / 5;
+        margin-left: 4rem;
+    }
+
+    .footer .column1 h1,
+    .footer .column2 h1,
+    .footer .column3 h1 {
+        font-family: "Play", sans-serif;
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .footer .column1 ul li,
+    .footer .column2 ul li,
+    .footer .column3 p {
+        font-size: 1rem;
+        list-style: none;
+        color: #adadad;
+        margin-bottom: 15px;
+    }
+
+    .footer .column1 h1,
+    .footer .column2 h1,
+    .footer .column3 h1 {
+        margin-bottom: 30px;
+    }
+
+    .footer .column1 ul li a,
+    .footer .column2 ul li a {
+        color: #adadad;
+        text-decoration: none;
+    }
+
+    .footer .column4 ul {
+        display: flex;
+    }
+
+    .footer .column4 ul li {
+        list-style: none;
+    }
+
+    .footer .column4 img {
+        margin-bottom: 20px;
+    }
+
+    .footer .column4 ul li a {
+        display: block;
+        font-size: 15px;
+        color: #ffffff;
+        height: 40px;
+        width: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        line-height: 44px;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .footer ul {
+        padding-left: 0rem;
+    }
+
+    /* Footer Last */
+
+    .footer_end {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px 0;
+    }
+
+    .footer_end p {
+        font-size: 16px;
+        color: #adadad;
+        line-height: 26px;
+        margin: 20px 0 5px 0;
+        text-align: center !important;
+    }
+
+    @media only screen and (max-width: 1400px) {}
+
+    @media only screen and (max-width: 1200px) {}
+
+    @media only screen and (max-width: 992px) {
+        .footer_container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .column4 {
+            margin-left: 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .footer_container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 30px;
+        }
+
+        .column1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .column2 {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .column3 {
+            grid-area: 2 / 1 / 3 / 2;
+            padding-right: 50px;
+        }
+
+        .column4 {
+            grid-area: 2 / 2 / 3 / 3;
+            margin-left: 0;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+
+        .column1,
+        .column3 {
+            margin-right: 45px;
+            width: 100%;
+        }
+
+        .footer_container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .footer .column4 ul li a {
+            height: 30px;
+            width: 30px;
+            line-height: 35px;
+        }
+    }
+
+    @media only screen and (max-width: 420px) {
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 20px;
+        }
+
+        .column1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .column2 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .column3 {
+            grid-area: 3 / 1 / 4 / 2;
+            width: 100%;
+            padding-right: 0;
+            margin-right: 0;
+            padding-bottom: 0;
+        }
+
+        .column4 {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+
+        .footer .column4 ul li a {
+            height: 40px;
+            width: 40px;
+            line-height: 44px;
+        }
+    }
 </style>
 
 </head>
 
 <body>
+
     <!--section-1-->
     <!-- navbar -->
     <div class="section-1">
@@ -689,16 +1247,16 @@
                             <a class="navLink navLink-ltr" href="#">Home</a>
                         </li>
                         <li class="nav-item mx-0 mx-xl-4">
-                            <a class="navLink navLink-ltr" href="/artbeat-entertainment/about-us/index.html">About</a>
+                            <a class="navLink navLink-ltr" href="#">About</a>
                         </li>
                         <li class="nav-item mx-0 mx-xl-4">
-                            <a class="navLink navLink-ltr" href="/artbeat-entertainment/portfolio/index.html">Portfolio</a>
+                            <a class="navLink navLink-ltr" href="#">Portfolio</a>
                         </li>
                         <li class="nav-item mx-0 mx-xl-4">
                             <a class="navLink navLink-ltr" href="#">Services</a>
                         </li>
                         <li class="nav-item mx-0 mx-xl-4">
-                            <a class="navLink navLink-ltr" href="/artbeat-entertainment/contact-us/index.html">Contact</a>
+                            <a class="navLink navLink-ltr" href="#">Contact</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav justify-content-between">
@@ -735,9 +1293,9 @@
                 <ul class="navbar-nav justify-content-between ms-2 me-5 mb-2 mb-lg-0">
                     <a class="navItem px-2 py-2" href="#">Home</a>
                     <a class="navItem px-2 py-2" href="#">About</a>
-                    <a class="navItem px-2 py-2" href="portfolio\index.html">Portfolio</a>
+                    <a class="navItem px-2 py-2" href="#">Portfolio</a>
                     <a class="navItem px-2 py-2" href="#">Services</a>
-                    <a class="navItem px-2 py-2" href="contact-us\index.html">Contact</a>
+                    <a class="navItem px-2 py-2" href="#">Contact</a>
                 </ul>
             </div>
         </nav>
@@ -761,9 +1319,55 @@
             </div>
         </div>
     </div>
+
+
     <!--section-2-->
+
+
+    <div class="services_container">
+        <div class="services_main">
+            <div class="div1">
+                <h3>Our Services</h3>
+                <h1>What we do?</h1>
+                <p>If you hire a videographer of our team you will get a video professional to make a custom video for
+                    your
+                    business and, once the project is over.</p>
+                <button>VIEW ALL SERVICES</button>
+            </div>
+            <div class="div2" onmouseover="forwardAnimation" onmouseout="reverseAnimation">
+                <span class="span2"><img src="/images/motion_graphics.webp" alt=""></span>
+                <h1>Cinematic Shorts</h1>
+                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post production
+                    services
+                    can put the finishing touches.</p>
+            </div>
+            <div class="div3">
+                <span class="span3"><img src="/images/script_writing.webp" alt=""></span>
+                <h1>Scripting and Editing</h1>
+                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post production
+                    services
+                    can put the finishing touches.</p>
+            </div>
+            <div class="div4">
+                <span class="span4"><img src="/images/video_distribution.webp" alt=""></span>
+                <h1>Casting</h1>
+                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post production
+                    services
+                    can put the finishing touches.</p>
+            </div>
+            <div class="div5">
+                <span class="span5"><img src="/images/video_hosting.webp" alt=""></span>
+                <h1>Video Production</h1>
+                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post production
+                    services
+                    can put the finishing touches.</p>
+            </div>
+        </div>
+    </div>
     <!--section-3-->
+
     <!--section-4-->
+
     <div class="section-4">
         <div class="container">
             <div class="row row-cols-lg-auto row-cols-md-2 row-cols-sm-1 text-center justify-content-center mx-0 px-0">
@@ -803,7 +1407,9 @@
             </div>
         </div>
     </div>
+
     <!--section-5-->
+
     <div class="section-5 py-5">
         <div class="container">
             <div class="row">
@@ -917,11 +1523,114 @@
             </div>
         </div>
     </div>
+
     <!--section-6-->
     <!--section-7-->
 
+    <!-- section-8 -->
+
+    <div class="footer_container">
+
+        <div class="footer">
+            <div class="column1">
+                <h1>TRUST CENTRE</h1>
+                <ul>
+                    <li><a href="">Cookies</a></li>
+                    <li><a href="">Advertisement</a></li>
+                    <li><a href="">Preference</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Report Abuse</a></li>
+                    <li><a href="">Trust Center</a></li>
+                </ul>
+            </div>
+            <div class="column2">
+                <h1>SUPPORT</h1>
+                <ul>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">Product Support</a></li>
+                    <li><a href="">Site map</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Location</a></li>
+                </ul>
+            </div>
+            <div class="column3">
+                <h1>About Us</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut veniam nam libero, nisi ad
+                    consequuntur.
+                    Deleniti nihil id ex officia!</p>
+
+            </div>
+            <div class="column4">
+                <img src="#" alt="LOGO">
+                <ul>
+                    <li>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer_end">
+            <p>Copyright © 2021 All rights reserved</p>
+        </div>
+
+    </div>
+
+    <!-- ***************************************************************************************** -->
+    
+    <!-- JAVASCRIPT -->
+    
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Section 2 -->
+
+    <script>
+        $(".div2").mouseover(function () {
+            $(".span2").addClass("animated");
+        })
+        $(".div2").mouseleave(function () {
+            $(".span2").removeClass("animated");
+        })
+
+        $(".div3").mouseover(function () {
+            $(".span3").addClass("animated");
+        })
+        $(".div3").mouseleave(function () {
+            $(".span3").removeClass("animated");
+        })
+
+        $(".div4").mouseover(function () {
+            $(".span4").addClass("animated");
+        })
+        $(".div4").mouseleave(function () {
+            $(".span4").removeClass("animated");
+        })
+
+        $(".div5").mouseover(function () {
+            $(".span5").addClass("animated");
+        })
+        $(".div5").mouseleave(function () {
+            $(".span5").removeClass("animated");
+        })
+    </script>
+
+
+
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
