@@ -703,6 +703,8 @@
 
     .foo {
         color: #fff;
+        padding-right: 67px;
+        text-align: left;
     }
 
     .column1 {
@@ -739,13 +741,18 @@
         list-style: none;
         color: #adadad;
         margin-bottom: 15px;
+        text-align: left;
     }
 
     .footer .column1 ul li a,
     .footer .column2 ul li a {
+
         color: #adadad;
         text-decoration: none;
+
+
     }
+
 
     .footer .column4 ul {
         display: flex;
@@ -838,9 +845,12 @@
     @media only screen and (max-width: 576px) {
 
         .column1,
-        .column3 {
+        .column2,
+        .column3,
+        .column4{
             margin-right: 45px;
             width: 100%;
+            padding-left: 50px;
         }
 
         .footer_container {
@@ -899,7 +909,12 @@
         text-align: center !important;
     }
 
-    @media only screen and (max-width: 360px) {}
+    @media only screen and (max-width: 360px) {
+        .foo {
+            display: flex;
+            text-align: center;
+        }
+    }
 </style>
 
 <body>
