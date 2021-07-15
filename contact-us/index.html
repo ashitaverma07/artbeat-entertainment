@@ -268,13 +268,53 @@
 			margin-bottom: 0.5rem;
 		}
 
-		button {
-			border-radius: 0;
+		.coverButton {
+			text-decoration: none;
+			color: inherit;
+			position: relative;
+			background-color: transparent;
+			border: none;
+			color: white;
+			
 		}
 
-		button:focus {
-			outline: 1px dotted;
-			outline: 5px auto -webkit-focus-ring-color;
+		.coverButton:before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 60%;
+			width: 20%;
+			border-top: 2px solid #0293ba;
+			border-left: 2px solid #0293ba;
+			content: "";
+			transition: all 0.25s ease-in;
+		}
+
+		.coverButton:hover:before {
+			height: 100%;
+			width: 100%;
+		}
+
+		.coverButton:after {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			height: 60%;
+			width: 20%;
+			border-bottom: 2px solid #0293ba;
+			border-right: 2px solid #0293ba;
+			content: "";
+			transition: all 0.25s ease-in;
+		}
+
+		.coverButton:hover:after {
+			height: 100%;
+			width: 100%;
+		}
+
+		.coverButton:hover {
+			text-decoration: none;
+			color: white;
 		}
 
 		button,
@@ -1521,23 +1561,26 @@
 						alt="" srcset="" class="brandImg">
 				</div>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav justify-content-between mb-2 mb-lg-0 mx-auto">
-                        <li class="nav-item mx-3 mx-xl-4">
-                            <a class="navLink navLink-ltr" href="/artbeat-entertainment/index.html">Home</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-xl-4">
-                            <a class="navLink navLink-ltr" href="/artbeat-entertainment/about-us/index.html">About</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-xl-4">
-                            <a class="navLink navLink-ltr" href="/artbeat-entertainment/portfolio/index.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-xl-4">
-                            <a class="navLink navLink-ltr" href="/artbeat-entertainment/our-services/index.html">Services</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-xl-4">
-                            <a class="navLink navLink-ltr" href="/artbeat-entertainment/contact-us/index.html">Contact</a>
-                        </li>
-                    </ul>
+					<ul class="navbar-nav justify-content-between mb-2 mb-lg-0 mx-auto">
+						<li class="nav-item mx-3 mx-xl-4">
+							<a class="navLink navLink-ltr" href="/artbeat-entertainment/index.html">Home</a>
+						</li>
+						<li class="nav-item mx-0 mx-xl-4">
+							<a class="navLink navLink-ltr" href="/artbeat-entertainment/about-us/index.html">About</a>
+						</li>
+						<li class="nav-item mx-0 mx-xl-4">
+							<a class="navLink navLink-ltr"
+								href="/artbeat-entertainment/portfolio/index.html">Portfolio</a>
+						</li>
+						<li class="nav-item mx-0 mx-xl-4">
+							<a class="navLink navLink-ltr"
+								href="/artbeat-entertainment/our-services/index.html">Services</a>
+						</li>
+						<li class="nav-item mx-0 mx-xl-4">
+							<a class="navLink navLink-ltr"
+								href="/artbeat-entertainment/contact-us/index.html">Contact</a>
+						</li>
+					</ul>
 					<ul class="navbar-nav justify-content-between">
 						<li class="nav-item mx-2 mx-xxl-2">
 							<a class="navLink" href="#">
@@ -1570,11 +1613,11 @@
 			</button>
 			<div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent1">
 				<ul class="navbar-nav justify-content-between ms-2 me-5 mb-2 mb-lg-0">
-                    <a class="navItem px-2 py-2" href="/artbeat-entertainment/index.html">Home</a>
-                    <a class="navItem px-2 py-2" href="/artbeat-entertainment/about-us/index.html">About</a>
-                    <a class="navItem px-2 py-2" href="/artbeat-entertainment/portfolio/index.html">Portfolio</a>
-                    <a class="navItem px-2 py-2" href="/artbeat-entertainment/our-services/index.html">Services</a>
-                    <a class="navItem px-2 py-2" href="/artbeat-entertainment/contact-us/index.html">Contact</a>
+					<a class="navItem px-2 py-2" href="/artbeat-entertainment/index.html">Home</a>
+					<a class="navItem px-2 py-2" href="/artbeat-entertainment/about-us/index.html">About</a>
+					<a class="navItem px-2 py-2" href="/artbeat-entertainment/portfolio/index.html">Portfolio</a>
+					<a class="navItem px-2 py-2" href="/artbeat-entertainment/our-services/index.html">Services</a>
+					<a class="navItem px-2 py-2" href="/artbeat-entertainment/contact-us/index.html">Contact</a>
 				</ul>
 			</div>
 		</nav>
@@ -1660,7 +1703,7 @@
 							<input type="text" placeholder="Email">
 							<input type="text" placeholder="Website">
 							<textarea placeholder="Message"></textarea>
-							<button type="submit" class="site-btn">Send Message</button>
+							<button type="submit" class="coverButton px-4 py-2">Send Message</button>
 						</form>
 					</div>
 				</div>
