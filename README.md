@@ -2,8 +2,8 @@
 This is the project for my internship at Artbeat Entertainment. I am designing and programming the front-end part of the page. This project will be responsive across all viewports. It is currently under construction ⚠
 
 ## Contributing Guide
-* * *
-If you want to add your own game to the site, follow these steps:
+-------
+If you want to make new changes to the site, follow these steps:
 
 1. Fork the project repository.
 2. Clone the forked repository on your machine.
