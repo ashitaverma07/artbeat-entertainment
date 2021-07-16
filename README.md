@@ -7,7 +7,7 @@ If you want to make new changes to the site, follow these steps:
 
 1. Fork the project repository.
 2. Clone the forked repository on your machine.
-3. Make changes by adding your information wherever mentioned.
+3. Make changes wherever needed.
 4. That's it! Stage your changes<br>
 ```git add -A```<br>
 5. Commit your changes<br>
