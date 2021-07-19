@@ -20,7 +20,10 @@
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Play:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Play:wght@400&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
 	<!-- Favicon -->
 	<link rel="icon" href="...">
 	<title>Artbeat</title>
@@ -55,17 +58,12 @@
 			float: left;
 			margin: 0;
 			overflow: hidden;
+			display: none;
 		}
 
 		.navbar:nth-child(1) {
 			margin-left: 12.5% !important;
 			margin-right: 12.5% !important;
-		}
-
-		.navbar:nth-child(2) {
-			border: 2.5px solid white;
-			margin-right: 12.5% !important;
-			margin-left: 12.5% !important;
 		}
 
 		li {
@@ -115,11 +113,25 @@
 		}
 
 		.menuNavbar {
-			background-color: #4c4c4ccd;
+			background-color: #151241;
+		}
+
+		button ion-icon {
+			width: 100%;
+		}
+
+		#navbarSupportedContent1 {
+			max-width: 100% !important;
+			width: 100% !important;
+		}
+
+		.navbar-toggler {
+			border-color: white !important;
+			border: 0 !important;
 		}
 
 		.navbar-toggler:focus {
-			box-shadow: 0 0 0 0.05rem
+			box-shadow: 0 0 0 0rem
 		}
 
 		.navItem {
@@ -361,12 +373,23 @@
 		@media only screen and (max-width: 1200px) {
 
 			/* navbar */
+
+			.navbar:nth-child(1) {
+				display: none;
+			}
+
 			.nav-item {
 				display: none !important;
 			}
 
 			.navbar-nav {
 				width: auto;
+			}
+
+			.menuNavbar {
+				width: 100% !important;
+				display: flex;
+				padding-top: 1rem;
 			}
 		}
 
@@ -379,8 +402,8 @@
 			}
 
 			.navbar:nth-child(2) {
-				margin-right: 2rem !important;
-				margin-left: 2rem !important;
+				margin-right: 0;
+				margin-left: 0;
 			}
 
 			.navLink-ltr::before {
@@ -401,21 +424,21 @@
 
 			.menuNavbar {
 				position: absolute;
-				width: 92%;
+				width: 100%;
 			}
 		}
 
 		@media only screen and (max-width: 768px) {
 			.menuNavbar {
 				position: absolute;
-				width: 85%;
+				width: 100%;
 			}
 		}
 
 		@media only screen and (max-width: 360px) {
 			.menuNavbar {
 				position: absolute;
-				width: 80%;
+				width: 100%;
 			}
 		}
 
@@ -476,11 +499,12 @@
 	<div class="section-1">
 		<nav class="navbar navbar-expand-xl navbar-dark py-3 play">
 			<div class="container-fluid">
-				<div class="navbarBrand">
-					<img
-						src="data:image/webp;base64,UklGRtYCAABXRUJQVlA4TMkCAAAvpkAHEL/BoG0kR+ZP93q/+ydhkG2k+rudwisM4Q2kbRP/ls87hm3bOJKu33fvP+zXAZzfj4YCcUAEQbAgFgrEg2BDTGwIIQoqgornB9ARnPA/cEA4q4/GLMKO2aj3jGIWszGL0ZgFZNu2rbbN2YYriGJdQ0AKihpDmfz/v9Z7QHIy7uhjRP8duG3jSPK1LbOnzM62L5DMPN+9dIdD97LL5xSvLNcDlHxaLylSWXUw0q0oRpndY0TuZxF6P2BUHuLzusXI3FFkcg2Rz+brOjJ/1Ive+HX+9dWgj8v/rEVnfDn/yw9jhTVFJItB5/z3m8qwYGotUHDJPZBQBXiiUsrVZTCqFNmMiJxvgkLrE+7ra+60L1ThKhgGySDhSLdvSmKCj8zmEShzGJzPv9VGOS8OqJlAEYRtgpRJCqOzkhZKlxjCiSwL8AZAaXJjoze6ZXoJsHfCvhQo8hmAVMqItMyPue15ebUwSoWwKkcNWqCReO5bmzzZhEbfhcszSb+CT++dDTVByiABwA3YnnJiLIlI4UqQAmEsJioZUzMYTIxGg1JRzacrEljyk8iExgS2QFIAfipHC2UmW+vIK3KQ280mwVONpwT0ql2rDI1Hcnu04xC5GFSzUmQNHwCRxvGhUZo9H8rc6kyY+GNMUBEm2Yh434nM4JGvXUNkazRLzcqeL7CK3H4FJB+Fx9DV+0ScrEX2CnvvE3qHDYnjq9gL2xFMbJaOhGpx7vPK0LDsL3xZuZKqGbAH/CiS/Zjz9V6cPMK+ckxja5OIMhrAKcN5Eou3C1ykxUUAcAZKHvXRHJwKzSkjRcNqVso93KgnsSlc7JbHQ1zCRvDoyYYS33AlR6RpoPHKtZfPSrZsB4s+8NNQbiB/2jeQwzKSt+PReVy8G/9wE81Hxf+0B28iWvXWr35Fkcpy86b9etssKV6Z5zev/enUv97kC4pPCAA="
-						alt="" srcset="" class="brandImg">
-				</div>
+				<a href="/artbeat-entertainment/index.html">
+					<div class="navbarBrand">
+						<img src="data:image/webp;base64,UklGRtYCAABXRUJQVlA4TMkCAAAvpkAHEL/BoG0kR+ZP93q/+ydhkG2k+rudwisM4Q2kbRP/ls87hm3bOJKu33fvP+zXAZzfj4YCcUAEQbAgFgrEg2BDTGwIIQoqgornB9ARnPA/cEA4q4/GLMKO2aj3jGIWszGL0ZgFZNu2rbbN2YYriGJdQ0AKihpDmfz/v9Z7QHIy7uhjRP8duG3jSPK1LbOnzM62L5DMPN+9dIdD97LL5xSvLNcDlHxaLylSWXUw0q0oRpndY0TuZxF6P2BUHuLzusXI3FFkcg2Rz+brOjJ/1Ive+HX+9dWgj8v/rEVnfDn/yw9jhTVFJItB5/z3m8qwYGotUHDJPZBQBXiiUsrVZTCqFNmMiJxvgkLrE+7ra+60L1ThKhgGySDhSLdvSmKCj8zmEShzGJzPv9VGOS8OqJlAEYRtgpRJCqOzkhZKlxjCiSwL8AZAaXJjoze6ZXoJsHfCvhQo8hmAVMqItMyPue15ebUwSoWwKkcNWqCReO5bmzzZhEbfhcszSb+CT++dDTVByiABwA3YnnJiLIlI4UqQAmEsJioZUzMYTIxGg1JRzacrEljyk8iExgS2QFIAfipHC2UmW+vIK3KQ280mwVONpwT0ql2rDI1Hcnu04xC5GFSzUmQNHwCRxvGhUZo9H8rc6kyY+GNMUBEm2Yh434nM4JGvXUNkazRLzcqeL7CK3H4FJB+Fx9DV+0ScrEX2CnvvE3qHDYnjq9gL2xFMbJaOhGpx7vPK0LDsL3xZuZKqGbAH/CiS/Zjz9V6cPMK+ckxja5OIMhrAKcN5Eou3C1ykxUUAcAZKHvXRHJwKzSkjRcNqVso93KgnsSlc7JbHQ1zCRvDoyYYS33AlR6RpoPHKtZfPSrZsB4s+8NNQbiB/2jeQwzKSt+PReVy8G/9wE81Hxf+0B28iWvXWr35Fkcpy86b9etssKV6Z5zev/enUv97kC4pPCAA="
+							alt="" srcset="" class="brandImg">
+					</div>
+				</a>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav justify-content-between mb-2 mb-lg-0 mx-auto">
 						<li class="nav-item mx-3 mx-xl-4">
@@ -490,13 +514,16 @@
 							<a class="navLink navLink-ltr" href="/artbeat-entertainment/about-us/index.html">About</a>
 						</li>
 						<li class="nav-item mx-0 mx-xl-4">
-							<a class="navLink navLink-ltr" href="/artbeat-entertainment/portfolio/index.html">Portfolio</a>
+							<a class="navLink navLink-ltr"
+								href="/artbeat-entertainment/portfolio/index.html">Portfolio</a>
 						</li>
 						<li class="nav-item mx-0 mx-xl-4">
-							<a class="navLink navLink-ltr" href="/artbeat-entertainment/our-services/index.html">Services</a>
+							<a class="navLink navLink-ltr"
+								href="/artbeat-entertainment/our-services/index.html">Services</a>
 						</li>
 						<li class="nav-item mx-0 mx-xl-4">
-							<a class="navLink navLink-ltr" href="/artbeat-entertainment/contact-us/index.html">Contact</a>
+							<a class="navLink navLink-ltr"
+								href="/artbeat-entertainment/contact-us/index.html">Contact</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav justify-content-between">
@@ -525,9 +552,17 @@
 			</div>
 		</nav>
 		<nav class="navbar navbar-dark py-2 menuNavbar play">
-			<button class="navbar-toggler ms-auto mx-1" type="button" data-bs-toggle="collapse"
+			<div class="navbarBrand ms-sm-5">
+				<a href="/artbeat-entertainment/index.html">
+					<img src="data:image/webp;base64,UklGRtYCAABXRUJQVlA4TMkCAAAvpkAHEL/BoG0kR+ZP93q/+ydhkG2k+rudwisM4Q2kbRP/ls87hm3bOJKu33fvP+zXAZzfj4YCcUAEQbAgFgrEg2BDTGwIIQoqgornB9ARnPA/cEA4q4/GLMKO2aj3jGIWszGL0ZgFZNu2rbbN2YYriGJdQ0AKihpDmfz/v9Z7QHIy7uhjRP8duG3jSPK1LbOnzM62L5DMPN+9dIdD97LL5xSvLNcDlHxaLylSWXUw0q0oRpndY0TuZxF6P2BUHuLzusXI3FFkcg2Rz+brOjJ/1Ive+HX+9dWgj8v/rEVnfDn/yw9jhTVFJItB5/z3m8qwYGotUHDJPZBQBXiiUsrVZTCqFNmMiJxvgkLrE+7ra+60L1ThKhgGySDhSLdvSmKCj8zmEShzGJzPv9VGOS8OqJlAEYRtgpRJCqOzkhZKlxjCiSwL8AZAaXJjoze6ZXoJsHfCvhQo8hmAVMqItMyPue15ebUwSoWwKkcNWqCReO5bmzzZhEbfhcszSb+CT++dDTVByiABwA3YnnJiLIlI4UqQAmEsJioZUzMYTIxGg1JRzacrEljyk8iExgS2QFIAfipHC2UmW+vIK3KQ280mwVONpwT0ql2rDI1Hcnu04xC5GFSzUmQNHwCRxvGhUZo9H8rc6kyY+GNMUBEm2Yh434nM4JGvXUNkazRLzcqeL7CK3H4FJB+Fx9DV+0ScrEX2CnvvE3qHDYnjq9gL2xFMbJaOhGpx7vPK0LDsL3xZuZKqGbAH/CiS/Zjz9V6cPMK+ckxja5OIMhrAKcN5Eou3C1ykxUUAcAZKHvXRHJwKzSkjRcNqVso93KgnsSlc7JbHQ1zCRvDoyYYS33AlR6RpoPHKtZfPSrZsB4s+8NNQbiB/2jeQwzKSt+PReVy8G/9wE81Hxf+0B28iWvXWr35Fkcpy86b9etssKV6Z5zev/enUv97kC4pPCAA="
+						alt="" srcset="" class="brandImg">
+				</a>
+			</div>
+			<button class="navbar-toggler ms-auto me-sm-5" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-				aria-label="Toggle navigation">Menu<span class="navbar-toggler-icon"></span>
+				aria-label="Toggle navigation"><span class="material-icons-outlined" style="font-size: 2.25rem;">
+					menu
+				</span>
 			</button>
 			<div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent1">
 				<ul class="navbar-nav justify-content-between ms-2 me-5 mb-2 mb-lg-0">
@@ -537,6 +572,20 @@
 					<a class="navItem px-2 py-2" href="/artbeat-entertainment/our-services/index.html">Services</a>
 					<a class="navItem px-2 py-2" href="/artbeat-entertainment/contact-us/index.html">Contact</a>
 				</ul>
+				<div class="d-flex flex-row justify-content-evenly">
+					<a href="#">
+						<ion-icon name="logo-facebook" style="color: white;"></ion-icon>
+					</a>
+					<a href="#">
+						<ion-icon name="logo-twitter" style="color: white;"></ion-icon>
+					</a>
+					<a href="#">
+						<ion-icon name="logo-instagram" style="color: white;"></ion-icon>
+					</a>
+					<a href="#">
+						<ion-icon name="logo-youtube" style="color: white;"></ion-icon>
+					</a>
+				</div>
 			</div>
 		</nav>
 
@@ -630,8 +679,8 @@
 			<div class="modal-content">
 
 				<div class="modal-body">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo" title="YouTube video player"
-						frameborder="0"
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo"
+						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
@@ -643,8 +692,8 @@
 			<div class="modal-content">
 
 				<div class="modal-body">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo" title="YouTube video player"
-						frameborder="0"
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo"
+						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
@@ -656,8 +705,8 @@
 			<div class="modal-content">
 
 				<div class="modal-body">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/2UgCOxTrtdY" title="YouTube video player"
-						frameborder="0"
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/2UgCOxTrtdY"
+						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
@@ -669,8 +718,8 @@
 			<div class="modal-content">
 
 				<div class="modal-body">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo" title="YouTube video player"
-						frameborder="0"
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo"
+						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
@@ -686,8 +735,8 @@
 
 				<div class="modal-body">
 
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo" title="YouTube video player"
-						frameborder="0"
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo"
+						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 
@@ -700,8 +749,8 @@
 			<div class="modal-content">
 
 				<div class="modal-body">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo" title="YouTube video player"
-						frameborder="0"
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo"
+						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
@@ -713,8 +762,8 @@
 			<div class="modal-content">
 
 				<div class="modal-body">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo" title="YouTube video player"
-						frameborder="0"
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo"
+						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
@@ -726,8 +775,8 @@
 			<div class="modal-content">
 
 				<div class="modal-body">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo" title="YouTube video player"
-						frameborder="0"
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo"
+						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
@@ -739,8 +788,8 @@
 			<div class="modal-content">
 
 				<div class="modal-body">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo" title="YouTube video player"
-						frameborder="0"
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/CVHj7Wxhvdo"
+						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
