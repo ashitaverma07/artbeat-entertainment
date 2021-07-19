@@ -70,11 +70,6 @@
         margin-right: 12.5% !important;
     }
 
-    .navbar:nth-child(2) {
-        margin-right: 12.5% !important;
-        margin-left: 12.5% !important;
-    }
-
     li {
         list-style: none;
     }
@@ -122,7 +117,13 @@
     }
 
     .menuNavbar {
-        background-color: #4c4c4ccd;
+        background-color: #133b705d;
+    }
+
+    #navbarSupportedContent1{
+        background-color: #133b70a4;
+        max-width: 100%!important;
+        width: 100%!important;
     }
 
     .navbar-toggler:focus {
@@ -1015,6 +1016,10 @@
     @media only screen and (max-width: 1200px) {
 
         /* navbar */
+        .navbar:nth-child(1) {
+            display: none;
+        }
+
         .nav-item {
             display: none !important;
         }
@@ -1022,9 +1027,10 @@
         .navbar-nav {
             width: auto;
         }
-
         .menuNavbar {
+            width: 100% !important;
             display: flex;
+            padding-top: 1rem;
         }
     }
 
@@ -1037,8 +1043,8 @@
         }
 
         .navbar:nth-child(2) {
-            margin-right: 2rem !important;
-            margin-left: 2rem !important;
+            margin-right: 0;
+            margin-left: 0;
         }
 
         .navLink-ltr::before {
@@ -1059,7 +1065,7 @@
 
         .menuNavbar {
             position: absolute;
-            width: 92%;
+            width: 100%;
         }
 
         /* section-1 */
@@ -1163,7 +1169,7 @@
     @media only screen and (max-width: 768px) {
         .menuNavbar {
             position: absolute;
-            width: 85%;
+            width: 100%;
         }
 
         .owl-carousel {
@@ -1187,7 +1193,7 @@
     @media only screen and (max-width: 360px) {
         .menuNavbar {
             position: absolute;
-            width: 80%;
+            width: 100%;
         }
     }
 
@@ -1475,11 +1481,11 @@
             </div>
         </nav>
         <nav class="navbar navbar-dark py-2 menuNavbar play">
-            <div class="navbarBrand">
+            <div class="navbarBrand ms-sm-5">
                 <img src="data:image/webp;base64,UklGRtYCAABXRUJQVlA4TMkCAAAvpkAHEL/BoG0kR+ZP93q/+ydhkG2k+rudwisM4Q2kbRP/ls87hm3bOJKu33fvP+zXAZzfj4YCcUAEQbAgFgrEg2BDTGwIIQoqgornB9ARnPA/cEA4q4/GLMKO2aj3jGIWszGL0ZgFZNu2rbbN2YYriGJdQ0AKihpDmfz/v9Z7QHIy7uhjRP8duG3jSPK1LbOnzM62L5DMPN+9dIdD97LL5xSvLNcDlHxaLylSWXUw0q0oRpndY0TuZxF6P2BUHuLzusXI3FFkcg2Rz+brOjJ/1Ive+HX+9dWgj8v/rEVnfDn/yw9jhTVFJItB5/z3m8qwYGotUHDJPZBQBXiiUsrVZTCqFNmMiJxvgkLrE+7ra+60L1ThKhgGySDhSLdvSmKCj8zmEShzGJzPv9VGOS8OqJlAEYRtgpRJCqOzkhZKlxjCiSwL8AZAaXJjoze6ZXoJsHfCvhQo8hmAVMqItMyPue15ebUwSoWwKkcNWqCReO5bmzzZhEbfhcszSb+CT++dDTVByiABwA3YnnJiLIlI4UqQAmEsJioZUzMYTIxGg1JRzacrEljyk8iExgS2QFIAfipHC2UmW+vIK3KQ280mwVONpwT0ql2rDI1Hcnu04xC5GFSzUmQNHwCRxvGhUZo9H8rc6kyY+GNMUBEm2Yh434nM4JGvXUNkazRLzcqeL7CK3H4FJB+Fx9DV+0ScrEX2CnvvE3qHDYnjq9gL2xFMbJaOhGpx7vPK0LDsL3xZuZKqGbAH/CiS/Zjz9V6cPMK+ckxja5OIMhrAKcN5Eou3C1ykxUUAcAZKHvXRHJwKzSkjRcNqVso93KgnsSlc7JbHQ1zCRvDoyYYS33AlR6RpoPHKtZfPSrZsB4s+8NNQbiB/2jeQwzKSt+PReVy8G/9wE81Hxf+0B28iWvXWr35Fkcpy86b9etssKV6Z5zev/enUv97kC4pPCAA="
                     alt="" srcset="" class="brandImg">
             </div>
-            <button class="navbar-toggler ms-auto mx-1" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler ms-auto me-sm-5" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
             </button>
