@@ -11,7 +11,7 @@ If you want to make new changes to the site, follow these steps:
 4. That's it! Stage your changes<br>
 ```git add -A```<br>
 5. Commit your changes<br>
-```git commit -m "Add favorite game to the site"```<br>
+```git commit -m "Updates"```<br>
 6. Push to the changes to your forked repo<br>
 ```git push origin master```<br>
 7. Open a pull request and I will merge your contribution to the repo!
