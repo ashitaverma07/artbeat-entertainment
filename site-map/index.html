@@ -141,9 +141,13 @@
     }
 
     .coverPage {
-        padding: 15vh 0 20vh 0;
+        padding: 15vh 0 0vh 0;
         display: flex;
         justify-content: center
+    }
+
+    .section-1 div .sitemap{
+        transform: scale(0.75);
     }
 
     @keyframes animationForCoverText {
@@ -216,7 +220,7 @@
 
     @media only screen and (max-width:1200px) {
         .coverPage {
-            padding: 20vh 0 10vh 0;
+            padding: 20vh 0 2.5vh 0;
             display: flex;
             justify-content: center
         }
@@ -278,6 +282,9 @@
             position: absolute;
             width: 100%
         }
+        .section-1 div .sitemap{
+        transform: scale(1);
+    }
     }
 
     @media only screen and (max-width:360px) {
@@ -594,6 +601,9 @@
         <div class="coverPage">
             <h1 class="play text-center">SITE MAP</h1>
         </div>
+        <div class="text-center pb-5">
+            <img src="img/sitemap.png" alt="" width="75%" class="sitemap">
+        </div>
     </div>
     <div class="footer_container">
 
@@ -610,7 +620,7 @@
                 <ul>
                     <li><a href="/artbeat-entertainment/careers/index.html">Career</a></li>
                     <li><a href="">Blog</a></li>
-                    <li><a href="">Site map</a></li>
+                    <li><a href="/artbeat-entertainment/site-map/index.html">Site map</a></li>
                     <li><a href="">Team</a></li>
                 </ul>
             </div>
