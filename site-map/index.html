@@ -150,6 +150,10 @@
         transform: scale(0.75);
     }
 
+    .sitemap .row{
+        width: 70%;
+    }
+
     @keyframes animationForCoverText {
         0% {
             bottom: -22.5vh;
@@ -275,6 +279,11 @@
             position: absolute;
             width: 100%
         }
+
+        .sitemap .row{
+        width: 90%;
+    }
+        
     }
 
     @media only screen and (max-width:768px) {
@@ -292,6 +301,10 @@
             position: absolute;
             width: 100%
         }
+
+        .sitemap .row{
+        width: 100%;
+    }
     }
 
     .footer_container {
@@ -601,9 +614,44 @@
         <div class="coverPage">
             <h1 class="play text-center">SITE MAP</h1>
         </div>
-        <div class="text-center pb-5">
-            <img src="img/sitemap.png" alt="" width="75%" class="sitemap">
+
+        <div class="text-center sitemap">
+            <div class="row mx-auto">
+                <div class="col">
+                    <a href="/artbeat-entertainment/index.html">
+                        <button class="btn btn-secondary play">ARTBEAT ENTERTAINMENT</button>
+                    </a>
+                </div>
+            </div>
+            <div class="row mx-auto">
+                <div class="col">
+                    <a href="">
+                        <button class="btn btn-info">Home</button>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="">
+                        <button class="btn btn-info">About</button>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="">
+                        <button class="btn btn-info">Portfolio</button>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="">
+                        <button class="btn btn-info">Services</button>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="">
+                        <button class="btn btn-info">Contact</button>
+                    </a>
+                </div>
+            </div>
         </div>
+
     </div>
     <div class="footer_container">
 

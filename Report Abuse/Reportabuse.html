@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Abuse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            background-color: #1a083d;
+            /* color: white; */
+
+        }
+
+        .line {
+            display: flex;
+            margin-left: 200px;
+            color: white;
+
+            /* padding-top: 50px; */
+
+        }
+
+        #heading {
+            padding-top: 150px;
+        }
+
+        #upline {
+            padding-top: 10px;
+            padding-right: 200px;
+        }
+
+        #downline {
+            padding-top: 10px;
+            padding-right: 200px;
+        }
+
+        .accordion-item {
+            border: 1px solid grey;
+            /* margin: 5px; */
+        }
+
+        button:hover {
+            background-color: rgb(247, 247, 169);
+        }
+
+        #accordionFlushExample {
+            /* display: flex; */
+            border: 1px solid grey;
+            margin: 10px 200px;
+        }
+
+        .getstr {
+            margin-top: 60px;
+            margin-left: 880px;
+
+            /* padding-left: 100px; */
+            background-color: white;
+            padding: 10px 30px;
+            border: 1px solid grey;
+            border-radius: 6px;
+        }
+
+        .getstr:hover {
+            border: 1px solid black;
+            background-color: whitesmoke;
+
+        }
+
+        .bottomtext {
+            margin-top: 50px;
+            padding-left: 200px;
+            padding-right: 200px;
+            color: white;
+        }
+
+        .accordion-body {
+            border: 23px solid rgb(199, 199, 199);
+        }
+
+        .form-check {
+            margin-left: 0px;
+            font-weight: bold;
+            /* margin-top: 30px; */
+        }
+
+        .form-check-label {
+            margin-top: 20px;
+        }
+
+        .form-check-input {
+            margin-top: 25px;
+            margin-left: 0px;
+        }
+
+        .fw-bold {
+            color: green;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .grey {
+            color: grey;
+            font-size: 15px;
+        }
+
+        .text {
+            margin-top: 17px;
+            font-weight: bold;
+        }
+
+        /* navbar */
+        body {
+            /* color: white; */
+            overflow-x: hidden;
+        }
+
+        .josefin {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .play {
+            font-family: 'Play', sans-serif;
+        }
+
+        .section-1 {
+            background: url(/image2.jpeg) no-repeat center center/cover;
+            /* height: 90vh; */
+        }
+
+        .navbar-collapse {
+            width: 80%;
+        }
+
+        .menuNavbar {
+            position: absolute;
+            width: 75%;
+            /* padding:auto 2rem;  */
+            top: 10;
+            z-index: 10;
+            float: left;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .navbar:nth-child(1) {
+            margin-left: 12.5% !important;
+            margin-right: 12.5% !important;
+        }
+
+        .navbar:nth-child(2) {
+            border: 2.5px solid white;
+            margin-right: 12.5% !important;
+            margin-left: 12.5% !important;
+        }
+
+        .filler {
+            width: 20%;
+        }
+
+        .navbar-icons {
+            display: flex;
+        }
+
+        .navLink {
+            position: relative;
+            font-size: 1.15rem;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a.navLink:hover {
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+
+        .navLink::before {
+            bottom: 0px;
+            left: 0;
+            transition: 150ms;
+            height: 2px;
+            content: "";
+            position: absolute;
+            background-color: #00bfe7;
+        }
+
+        .navLink-ltr::before {
+            width: 100%;
+            bottom: -15px;
+            opacity: 0;
+        }
+
+        .navLink-ltr:hover::before {
+            bottom: -8px;
+            width: 100%;
+            opacity: 1;
+        }
+
+        .menuNavbar {
+            background-color: #4c4c4ccd;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 0.05rem
+        }
+
+        .navItem {
+            text-decoration: none;
+            color: white;
+        }
+
+        .navItem:hover {
+            background-color: #e2e0e0;
+            color: black !important;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 1400px) {
+
+            /* navbar */
+            .navbar-icons {
+                visibility: hidden;
+            }
+        }
+
+        @media only screen and (max-width: 1200px) {
+
+            /* navbar */
+            .nav-item {
+                display: none !important;
+            }
+
+            .navbar-nav {
+                width: auto;
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+
+            /* navbar */
+            .navbar:nth-child(1) {
+                margin-left: 2rem !important;
+                margin-right: 2rem !important;
+            }
+
+            .navbar:nth-child(2) {
+                margin-right: 2rem !important;
+                margin-left: 2rem !important;
+            }
+
+            .navLink-ltr::before {
+                width: 0%;
+                bottom: -5px;
+                opacity: 0;
+            }
+
+            .navLink-ltr:hover::before {
+                bottom: 0px;
+                width: 100%;
+                opacity: 1;
+            }
+
+            .navbar-icons {
+                display: none;
+            }
+
+            .menuNavbar {
+                position: absolute;
+                width: 92%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .menuNavbar {
+                position: absolute;
+                width: 85%;
+            }
+        }
+
+        @media only screen and (max-width: 360px) {
+            .menuNavbar {
+                position: absolute;
+                width: 80%;
+            }
+        }
+
+        .breadcrumb-option {
+            padding-top: 180px;
+        }
+
+        .spad {
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+
+        .set-bg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+        }
+
+        .breadcrumb__text h2 {
+            color: #ffffff;
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        /* footer  */
+
+        @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer_container {
+  color: white;
+  background-color: #0a0119;
+  padding: 3rem 6rem 1rem 6rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-row-gap: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.column1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.column2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.column3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.column4 {
+  grid-area: 1 / 4 / 2 / 5;
+  margin-left: 4rem;
+}
+
+.footer .column1 h1,
+.footer .column2 h1,
+.footer .column3 h1 {
+  font-family: "Play", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer .column1 ul li,
+.footer .column2 ul li,
+.footer .column3 p {
+  font-size: 1rem;
+  list-style: none;
+  color: #adadad;
+  margin-bottom: 15px;
+}
+
+.footer .column1 h1,
+.footer .column2 h1,
+.footer .column3 h1 {
+  margin-bottom: 30px;
+}
+
+.footer .column1 ul li a,
+.footer .column2 ul li a {
+  color: #adadad;
+  text-decoration: none;
+}
+
+.footer .column4 ul {
+  display: flex;
+}
+
+.footer .column4 ul li {
+  list-style: none;
+}
+
+.footer .column4 img {
+  margin-bottom: 20px;
+}
+
+.footer .column4 ul li a {
+  display: block;
+  font-size: 15px;
+  color: #ffffff;
+  height: 40px;
+  width: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  line-height: 44px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.footer ul {
+  padding-left: 0rem;
+}
+
+/* Footer Last */
+
+.footer_end {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+}
+
+.footer_end p {
+  font-size: 16px;
+  color: #adadad;
+  line-height: 26px;
+  margin: 20px 0 5px 0;
+  text-align: center !important;
+}
+
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+  .footer_container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .column4 {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
+
+  .column1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .column2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .column3 {
+    grid-area: 2 / 1 / 3 / 2;
+    padding-right: 50px;
+  }
+
+  .column4 {
+    grid-area: 2 / 2 / 3 / 3;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .column1,
+  .column3 {
+    margin-right: 45px;
+    width: 100%;
+  }
+
+  .footer_container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .footer .column4 ul li a {
+    height: 30px;
+    width: 30px;
+    line-height: 35px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+  }
+
+  .column1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .column2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .column3 {
+    grid-area: 3 / 1 / 4 / 2;
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+
+  .column4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .footer .column4 ul li a {
+    height: 40px;
+    width: 40px;
+    line-height: 44px;
+  }
+}
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    
+    <div class="section-1">
+        <nav class="navbar navbar-expand-xl navbar-dark pt-3 play">
+            <div class="container-fluid">
+                <div class="navbarBrand">
+                    <img src="/image1.jpeg" alt="" srcset="" class="brandImg">
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-between mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item mx-3 mx-xl-4">
+                            <a class="navLink navLink-ltr" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-xl-4">
+                            <a class="navLink navLink-ltr" href="#">About</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-xl-4">
+                            <a class="navLink navLink-ltr" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-xl-4">
+                            <a class="navLink navLink-ltr" href="#">Services</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-xl-4">
+                            <a class="navLink navLink-ltr" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav justify-content-between">
+                        <li class="nav-item mx-2 mx-xxl-2">
+                            <a class="navLink" href="#">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2 mx-xxl-2">
+                            <a class="navLink" href="#">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2 mx-xxl-2">
+                            <a class="navLink" href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2 mx-xxl-2">
+                            <a class="navLink" href="#">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-dark py-2 menuNavbar">
+            <button class="navbar-toggler ms-auto mx-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation">Menu<span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent1">
+                <ul class="navbar-nav justify-content-between ms-2 me-5 mb-2 mb-lg-0">
+                    <a class="navItem px-2 py-2" href="#">Home</a>
+                    <a class="navItem px-2 py-2" href="#">About</a>
+                    <a class="navItem px-2 py-2" href="#">Portfolio</a>
+                    <a class="navItem px-2 py-2" href="#">Services</a>
+                    <a class="navItem px-2 py-2" href="#">Contact</a>
+                </ul>
+            </div>
+        </nav>
+        <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg"
+            style="background-image: url(&quot;img/breadcrumb-bg.jpg&quot;);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="breadcrumb__text">
+                            <!-- <h2>Careers</h2> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Reportabuse body -->
+
+    <h2 class="line" id="heading">PLEASE SELECT AN OPTION TO BEGIN.</h2>
+
+    <div class="line" id="upline">
+        <p> If you would like to report internet abuse to Artbeat, select an option below to begin your report. Please
+            provide the required details so that our team can research your complaint. </p>
+    </div>
+
+    <div class="line" id="downline">
+        <p> If you submitted a report via email and were directed to this form, your submission is not complete. In
+            order for us to successfully process your inquiry, you must complete the form below and provide the required
+            details. </p>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Inappropriate Content
+                    <!-- <div class="intext">
+                        <p>You wish to report violent, disturbing or inappropriate content</p>
+                    </div> -->
+
+                </button>
+            </h2>
+
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                    <!-- Form1  -->
+
+                    <div class="form-check">
+                        <H6> Please select the option that best describes what you would like to report. </H6>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            I have found material on a site that promotes, encourages or engages in child exploitation
+                            or abuse of children
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Disturbing Imagery, Violence, etc.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            I wish to report questionable pharmacy content on a website
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            I have come across content that displays personal information such as a social security
+                            number or credit card number
+                        </label>
+                    </div>
+                    <button class="getstr">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Malware
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                    <!-- form-02  -->
+
+                    <div class="form-check">
+                        <h6>Please select the option that best describes what you would like to report.</h6>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+
+                            I received a computer virus or other malware and wish to report it
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            I wish to report a site that promotes, encourages or engages in computer or network hacking
+                            or cracking
+                        </label>
+                    </div>
+                    <button class="getstr">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Phishing
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                    <!-- Form-03  -->
+
+                    <div class="form-check">
+                        <h6>Please select the option that best describes what you would like to report. If you are
+                            unsure of what selection you should make, please review our <a href="#">What is Phishing</a>
+                            help article before proceeding.</h6>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+
+                            I have received an email requesting personal information
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            I wish to report a website that is posing as another website
+                        </label>
+                    </div>
+                    <button class="getstr">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Spam
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                    <!-- Form-04  -->
+
+                    <div class="form-check">
+                        <h6>Please select the option that best describes what you would like to report. If you are
+                            unsure of what selection you should make, please review our <a href="#">What is Spam</a>
+                            help article before proceeding.</h6>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+
+                            I received unsolicited email
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            I received an unsolicited text or SMS message
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            I wish to report unsolicited comments on a forum, blog or in an instant message
+                        </label>
+                    </div>
+                    <button class="getstr">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Other
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                    <!-- Others- Dropdown list  -->
+
+                    <h6> Please select the option that best describes what you would like to report. </h6>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Copyright/Trademark Infringement</div>
+                                <div class="grey"> Someone copied your content</div>
+                                <div class="text">To review our Trademark Policy policy and access a form for submitting
+                                    a complaint concerning Copyright/Trademark Infringement, please click
+                                    <a href="#">here</a>
+                                </div>
+                            </div>
+                            <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Abuse/Harassment</div>
+                                <div class="grey">Report slander, libel, defamation, etc.</div>
+                                <div class="text">Artbeat does not allow illegal content on our customer's websites.
+                                    However, as a hosting provider, it is not our place to determine if the site you
+                                    have mentioned is actually engaging in illegal activities. If you suspect any of our
+                                    customers are using their website to engage in any illegal activities, please help
+                                    us by contacting your local law enforcement agency, and request them to investigate
+                                    this situation. Please refer to our Universal Terms of Service Agreement for
+                                    specifics on our policies. </div>
+                            </div>
+                            <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Email Bounces</div>
+                                <div class="grey"> You are receiving bounces for emails you did not send</div>
+                                <div class="text">Spammers often use a random address in their spam list as the "from"
+                                    address to disguise the true source. If you are experiencing these types of email
+                                    bounces, please refer to the article,<a href="#">Why am I getting bouncebacks for
+                                        messages I did not send?</a> </div>
+                            </div>
+
+                            <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Domain Isuues/Questions</div>
+                                <div class="grey"> You are receiving bounces for emails you did not send</div>
+                                <div class="text">Please contact <a href="#">Customer Support</a> for help directing you
+                                    to the right place.</div>
+                            </div>
+                            <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Invalid WHOIS</div>
+                                <div class="grey"> Report Fake or Incorrect Registrant Information</div>
+                                <div class="text">If you suspect a domain has been registered with fake information,
+                                    please complete the form located at <a href="#"> https://www.godaddy.com/whois</a>
+                                    by searching for the domain, and then clicking the link "Report Invalid Whois".
+                                </div>
+                            </div>
+                            <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold">Disclosure Requests</div>
+                                <div class="grey">Request Registrant Information</div>
+                                <div class="text">Info displayed in public WHOIS is limited for privacy reasons. You can
+                                    learn more about access to non-public domain contact information <a
+                                        href="#">here</a></div>
+                            </div>
+                            <!-- <span class="badge bg-primary rounded-pill">14</span> -->
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="bottomtext">
+        <p> Artbeat has been fighting phishing, botnet, malware, and other forms of abuse for more than 20 years and we
+            have robust procedures and tools in place to help prevent and mitigate such attacks. Specifically, our team
+            utilizes advanced technologies and collaborates with security companies and independent experts, law
+            enforcement and other government agencies, and industry working groups to combat this type of abuse. Our <a
+                href="#">Universal Terms of Service</a> precludes customers from using our services for phishing,
+            malware and related abuse and gives us broad discretion for taking action. </p>
+    </div>
+
+ <!-- footer  -->
+
+ <div class="footer_container">
+
+    <div class="footer">
+      <div class="column1">
+        <ul>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Cookies and Preference</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Report Abuse</a></li>
+        </ul>
+      </div>
+      <div class="column2">
+        <ul>
+          <li><a href="">Career</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Site map</a></li>
+          <li><a href="">Team</a></li>
+        </ul>
+      </div>
+      <div class="column3">
+        <h1>About Us</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut veniam nam libero, nisi ad
+          consequuntur.
+          Deleniti nihil id ex officia!</p>
+
+      </div>
+      <div class="column4">
+        <img src="#" alt="LOGO">
+        <ul>
+          <li>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer_end">
+      <p>Copyright © 2021 All rights reserved</p>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
