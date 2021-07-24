@@ -872,17 +872,6 @@
 			padding-bottom: 100px;
 		}
 
-
-		@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
-
-		@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
-
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-
 		.footer_container {
 			color: white;
 			background-color: #0a0119;
@@ -934,12 +923,6 @@
 			margin-bottom: 15px;
 		}
 
-		.footer .column1 h1,
-		.footer .column2 h1,
-		.footer .column3 h1 {
-			margin-bottom: 30px;
-		}
-
 		.footer .column1 ul li a,
 		.footer .column2 ul li a {
 			color: #adadad;
@@ -971,12 +954,7 @@
 			margin-right: 10px;
 		}
 
-		.footer ul {
-			padding-left: 0rem;
-		}
-
 		/* Footer Last */
-
 		.footer_end {
 			border-top: 1px solid rgba(255, 255, 255, 0.1);
 			padding: 20px 0;
@@ -988,14 +966,6 @@
 			line-height: 26px;
 			margin: 20px 0 5px 0;
 			text-align: center !important;
-		}
-
-		.text-center {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin-bottom: 20px;
 		}
 
 		@media only screen and (max-width: 1400px) {}
@@ -1022,9 +992,9 @@
 			.footer {
 				display: grid;
 				grid-template-columns: repeat(2, 1fr);
-				grid-template-rows: 0.5fr 1fr;
+				grid-template-rows: repeat(2, 1fr);
 				grid-column-gap: 0px;
-				grid-row-gap: 40px;
+				grid-row-gap: 30px;
 			}
 
 			.column1 {
@@ -1070,9 +1040,9 @@
 			.footer {
 				display: grid;
 				grid-template-columns: 1fr;
-				grid-template-rows: repeat(3, 0.5fr) 1fr;
+				grid-template-rows: repeat(4, 1fr);
 				grid-column-gap: 0px;
-				grid-row-gap: 30px;
+				grid-row-gap: 20px;
 			}
 
 			.column1 {
@@ -1607,8 +1577,8 @@
 			<div class="container-fluid">
 				<a href="/artbeat-entertainment/index.html">
 					<div class="navbarBrand">
-						<img src="/artbeat-entertainment/contact-us/img/artbeat-circle-logo-1.png" alt="" srcset=""
-							class="brandImg">
+						<img src="/artbeat-entertainment/contact-us/img/artbeat-circle-logo-1.png"
+							alt="" srcset="" class="brandImg">
 					</div>
 				</a>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -1620,13 +1590,16 @@
 							<a class="navLink navLink-ltr" href="/artbeat-entertainment/about-us/index.html">About</a>
 						</li>
 						<li class="nav-item mx-0 mx-xl-4">
-							<a class="navLink navLink-ltr" href="/artbeat-entertainment/portfolio/index.html">Portfolio</a>
+							<a class="navLink navLink-ltr"
+								href="/artbeat-entertainment/portfolio/index.html">Portfolio</a>
 						</li>
 						<li class="nav-item mx-0 mx-xl-4">
-							<a class="navLink navLink-ltr" href="/artbeat-entertainment/our-services/index.html">Services</a>
+							<a class="navLink navLink-ltr"
+								href="/artbeat-entertainment/our-services/index.html">Services</a>
 						</li>
 						<li class="nav-item mx-0 mx-xl-4">
-							<a class="navLink navLink-ltr" href="/artbeat-entertainment/contact-us/index.html">Contact</a>
+							<a class="navLink navLink-ltr"
+								href="/artbeat-entertainment/contact-us/index.html">Contact</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav justify-content-between">
@@ -1655,17 +1628,18 @@
 			</div>
 		</nav>
 		<nav class="navbar navbar-dark py-2 menuNavbar">
-			<div class="navbarBrand ms-sm-5">
-				<a href="/artbeat-entertainment/index.html">
-					<img src="/artbeat-entertainment/contact-us/img/artbeat-circle-logo-1.png" alt="" srcset="" class="brandImg">
-				</a>
-			</div>
-			<button class="navbar-toggler ms-auto me-sm-5" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-				aria-label="Toggle navigation"><span class="material-icons-outlined" style="font-size: 2.25rem;">
-					menu
-				</span>
-			</button>
+            <div class="navbarBrand ms-sm-5">
+                <a href="/artbeat-entertainment/index.html">
+                    <img src="/artbeat-entertainment/contact-us/img/artbeat-circle-logo-1.png"
+                        alt="" srcset="" class="brandImg">
+                </a>
+            </div>
+            <button class="navbar-toggler ms-auto me-sm-5" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="material-icons-outlined" style="font-size: 2.25rem;">
+                    menu
+                    </span>
+            </button>
 			<div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent1">
 				<ul class="navbar-nav justify-content-between ms-2 me-5 mb-2 mb-lg-0">
 					<a class="navItem px-2 py-2" href="/artbeat-entertainment/index.html">Home</a>
@@ -1675,19 +1649,19 @@
 					<a class="navItem px-2 py-2" href="/artbeat-entertainment/contact-us/index.html">Contact</a>
 				</ul>
 				<div class="d-flex flex-row justify-content-evenly">
-					<a href="#">
-						<ion-icon name="logo-facebook" style="color: white;"></ion-icon>
-					</a>
-					<a href="#">
-						<ion-icon name="logo-twitter" style="color: white;"></ion-icon>
-					</a>
-					<a href="#">
-						<ion-icon name="logo-instagram" style="color: white;"></ion-icon>
-					</a>
-					<a href="#">
-						<ion-icon name="logo-youtube" style="color: white;"></ion-icon>
-					</a>
-				</div>
+                    <a href="#">
+                        <ion-icon name="logo-facebook" style="color: white;"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-twitter" style="color: white;"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-instagram" style="color: white;"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-youtube" style="color: white;"></ion-icon>
+                    </a>
+                </div>
 			</div>
 		</nav>
 		<div class="breadcrumb-option spad set-bg">
@@ -1782,20 +1756,20 @@
 	<div class="footer_container">
 		<div class="footer">
 			<div class="column1">
-				<ul>
-					<li><a href="/artbeat-entertainment/contact-us/contactus.html">Contact Us</a></li>
-					<li><a href="/artbeat-entertainment/contact-us/cookies.html">Cookies and Preferences</a></li>
-					<li><a href="/artbeat-entertainment/privacy-and-policy/index.html">Privacy Policy</a></li>
-					<!-- <li><a href="/artbeat-entertainment/report-abuse/index.html">Report Abuse</a></li> -->
-				</ul>
-			</div>
-			<div class="column2">
-				<ul>
-					<li><a href="/artbeat-entertainment/careers/index.html">Career</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="/artbeat-entertainment/site-map/index.html">Site map</a></li>
-					<li><a href="">Team</a></li>
-				</ul>
+                <ul>
+                    <li><a href="/artbeat-entertainment/contact-us/contactus.html">Contact Us</a></li>
+                    <li><a href="/artbeat-entertainment/contact-us/cookies.html">Cookies and Preferences</a></li>
+                    <li><a href="/artbeat-entertainment/privacy-and-policy/index.html">Privacy Policy</a></li>
+                    <!-- <li><a href="/artbeat-entertainment/report-abuse/index.html">Report Abuse</a></li> -->
+                </ul>
+            </div>
+            <div class="column2">
+                <ul>
+                    <li><a href="/artbeat-entertainment/careers/index.html">Career</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="/artbeat-entertainment/site-map/index.html">Site map</a></li>
+                    <li><a href="">Team</a></li>
+                </ul>
 			</div>
 			<div class="column3">
 				<h1>About Us</h1>
@@ -1803,29 +1777,29 @@
 					consequuntur.
 					Deleniti nihil id ex officia!</p>
 			</div>
-			<div class="column4">
-				<div class="text-center">
-					<img src="/artbeat-entertainment/contact-us/img/artbeat-circle-logo.png" alt="LOGO" width="50%" class="mb-2">
-					<ul>
-						<li>
-							<a href=""><i class="fab fa-facebook-f"></i></a>
-						</li>
-						<li>
-							<a href=""><i class="fab fa-twitter"></i></a>
-						</li>
-						<li>
-							<a href=""><i class="fab fa-linkedin-in"></i></a>
-						</li>
-						<li>
-							<a href=""><i class="fab fa-instagram"></i></a>
-						</li>
-						<li>
-							<a href=""><i class="fab fa-youtube"></i></a>
-						</li>
-					</ul>
-				</div>
+            <div class="column4">
+                <div class="text-center">
+                    <img src="/artbeat-entertainment/contact-us/img/artbeat-circle-logo.png" alt="LOGO" width="50%" class="mb-2">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
 
-			</div>
+            </div>
 		</div>
 		<div class="footer_end">
 			<p>Copyright © 2021 All rights reserved</p>
