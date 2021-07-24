@@ -483,46 +483,57 @@
         }
     }
 
+
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+    @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     .footer_container {
-        color: #fff;
+        color: white;
         background-color: #0a0119;
         padding: 3rem 6rem 1rem 6rem;
-        font-family: "Josefin Sans", sans-serif
+        font-family: "Josefin Sans", sans-serif;
     }
 
     .footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
-        grid-row-gap: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, .1)
+        grid-row-gap: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .column1 {
-        grid-area: 1/1/2/2
+        grid-area: 1 / 1 / 2 / 2;
     }
 
     .column2 {
-        grid-area: 1/2/2/3
+        grid-area: 1 / 2 / 2 / 3;
     }
 
     .column3 {
-        grid-area: 1/3/2/4
+        grid-area: 1 / 3 / 2 / 4;
     }
 
     .column4 {
-        grid-area: 1/4/2/5;
-        margin-left: 4rem
+        grid-area: 1 / 4 / 2 / 5;
+        margin-left: 4rem;
     }
 
     .footer .column1 h1,
     .footer .column2 h1,
     .footer .column3 h1 {
-        font-family: Play, sans-serif;
+        font-family: "Play", sans-serif;
         font-size: 18px;
         line-height: 1.2;
         margin-bottom: 15px;
-        font-weight: 700
+        font-weight: bold;
     }
 
     .footer .column1 ul li,
@@ -531,53 +542,55 @@
         font-size: 1rem;
         list-style: none;
         color: #adadad;
-        margin-bottom: 15px
+        margin-bottom: 15px;
     }
 
     .footer .column1 h1,
     .footer .column2 h1,
     .footer .column3 h1 {
-        margin-bottom: 30px
+        margin-bottom: 30px;
     }
 
     .footer .column1 ul li a,
     .footer .column2 ul li a {
         color: #adadad;
-        text-decoration: none
+        text-decoration: none;
     }
 
     .footer .column4 ul {
-        display: flex
+        display: flex;
     }
 
     .footer .column4 ul li {
-        list-style: none
+        list-style: none;
     }
 
     .footer .column4 img {
-        margin-bottom: 20px
+        margin-bottom: 20px;
     }
 
     .footer .column4 ul li a {
         display: block;
         font-size: 15px;
-        color: #fff;
+        color: #ffffff;
         height: 40px;
         width: 40px;
-        background: rgba(255, 255, 255, .1);
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
         line-height: 44px;
         text-align: center;
-        margin-right: 10px
+        margin-right: 10px;
     }
 
     .footer ul {
-        padding-left: 0
+        padding-left: 0rem;
     }
 
+    /* Footer Last */
+
     .footer_end {
-        border-top: 1px solid rgba(255, 255, 255, .1);
-        padding: 20px 0
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px 0;
     }
 
     .footer_end p {
@@ -585,106 +598,118 @@
         color: #adadad;
         line-height: 26px;
         margin: 20px 0 5px 0;
-        text-align: center !important
+        text-align: center !important;
     }
 
-    @media only screen and (max-width:992px) {
+    .text-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 1400px) {}
+
+    @media only screen and (max-width: 1200px) {}
+
+    @media only screen and (max-width: 992px) {
         .footer_container {
             padding-left: 2rem;
-            padding-right: 2rem
+            padding-right: 2rem;
         }
 
         .column4 {
-            margin-left: 2rem
+            margin-left: 2rem;
         }
     }
 
-    @media only screen and (max-width:768px) {
+    @media only screen and (max-width: 768px) {
         .footer_container {
             padding-left: 2rem;
-            padding-right: 2rem
+            padding-right: 2rem;
         }
 
         .footer {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 0;
-            grid-row-gap: 30px
+            grid-template-rows: 0.5fr 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 40px;
         }
 
         .column1 {
-            grid-area: 1/1/2/2
+            grid-area: 1 / 1 / 2 / 2;
         }
 
         .column2 {
-            grid-area: 1/2/2/3
+            grid-area: 1 / 2 / 2 / 3;
         }
 
         .column3 {
-            grid-area: 2/1/3/2;
-            padding-right: 50px
+            grid-area: 2 / 1 / 3 / 2;
+            padding-right: 50px;
         }
 
         .column4 {
-            grid-area: 2/2/3/3;
-            margin-left: 0
+            grid-area: 2 / 2 / 3 / 3;
+            margin-left: 0;
         }
     }
 
-    @media only screen and (max-width:576px) {
+    @media only screen and (max-width: 576px) {
 
         .column1,
         .column3 {
             margin-right: 45px;
-            width: 100%
+            width: 100%;
         }
 
         .footer_container {
             padding-left: 2rem;
-            padding-right: 2rem
+            padding-right: 2rem;
         }
 
         .footer .column4 ul li a {
             height: 30px;
             width: 30px;
-            line-height: 35px
+            line-height: 35px;
         }
     }
 
-    @media only screen and (max-width:420px) {
+    @media only screen and (max-width: 420px) {
         .footer {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
-            grid-column-gap: 0;
-            grid-row-gap: 20px
+            grid-template-rows: repeat(3, 0.5fr) 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 30px;
         }
 
         .column1 {
-            grid-area: 1/1/2/2
+            grid-area: 1 / 1 / 2 / 2;
         }
 
         .column2 {
-            grid-area: 2/1/3/2
+            grid-area: 2 / 1 / 3 / 2;
         }
 
         .column3 {
-            grid-area: 3/1/4/2;
+            grid-area: 3 / 1 / 4 / 2;
             width: 100%;
             padding-right: 0;
             margin-right: 0;
-            padding-bottom: 0
+            padding-bottom: 0;
         }
 
         .column4 {
-            grid-area: 4/1/5/2
+            grid-area: 4 / 1 / 5 / 2;
         }
 
         .footer .column4 ul li a {
             height: 40px;
             width: 40px;
-            line-height: 44px
+            line-height: 44px;
         }
     }
 </style>
@@ -700,8 +725,8 @@
             <div class="container-fluid">
                 <a href="/artbeat-entertainment/index.html">
                     <div class="navbarBrand">
-                        <img src="/artbeat-entertainment/site-map/img/artbeat-circle-logo-1.png"
-                            alt="" srcset="" class="brandImg">
+                        <img src="/artbeat-entertainment/site-map/img/artbeat-circle-logo-1.png" alt="" srcset=""
+                            class="brandImg">
                     </div>
                 </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -753,8 +778,8 @@
         <nav class="navbar navbar-dark py-2 menuNavbar play">
             <div class="navbarBrand ms-sm-5">
                 <a href="/artbeat-entertainment/index.html">
-                    <img src="/artbeat-entertainment/site-map/img/artbeat-circle-logo-1.png"
-                        alt="" srcset="" class="brandImg">
+                    <img src="/artbeat-entertainment/site-map/img/artbeat-circle-logo-1.png" alt="" srcset=""
+                        class="brandImg">
                 </a>
             </div>
             <button class="navbar-toggler ms-auto me-sm-5" type="button" data-bs-toggle="collapse"
@@ -871,7 +896,8 @@
             </div>
             <div class="column4">
                 <div class="text-center">
-                    <img src="/artbeat-entertainment/site-map/img/artbeat-circle-logo.png" alt="LOGO" width="50%" class="mb-2">
+                    <img src="/artbeat-entertainment/site-map/img/artbeat-circle-logo.png" alt="LOGO" width="50%"
+                        class="mb-2">
                     <ul>
                         <li>
                             <a href=""><i class="fab fa-facebook-f"></i></a>
