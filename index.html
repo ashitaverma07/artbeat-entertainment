@@ -122,7 +122,7 @@
         background-color: #151241;
     }
 
-    button ion-icon{
+    button ion-icon {
         width: 100%;
     }
 
@@ -131,9 +131,9 @@
         width: 100% !important;
     }
 
-    .navbar-toggler{
-        border-color: white!important;
-        border: 0!important;
+    .navbar-toggler {
+        border-color: white !important;
+        border: 0 !important;
     }
 
     .navbar-toggler:focus {
@@ -155,7 +155,7 @@
     /* navbar ends */
 
     .coverPage {
-        padding: 25vh 0 30vh 0;
+        padding: 15vh 0 30vh 0;
         display: flex;
         justify-content: center;
     }
@@ -221,6 +221,7 @@
         animation: animationForButtonColumn;
         animation-duration: 5s;
         animation-iteration-count: infinite;
+        font-size: 1.25rem;
     }
 
     @keyframes animationForButtonColumn {
@@ -584,9 +585,26 @@
         .services_container {
             padding: 5rem 2rem;
         }
+
+        .coverPage {
+            padding: 30vh 0 25vh 0;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     @media only screen and (max-width: 576px) {
+
+        .coverPage {
+            padding: 30vh 0 25vh 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .coverHeadline {
+            font-size: 2.25rem;
+        }
+
         .services_container {
             padding: 5rem 1rem;
         }
@@ -1443,8 +1461,8 @@
             <div class="container-fluid">
                 <a href="/artbeat-entertainment/index.html">
                     <div class="navbarBrand">
-                        <img src="/artbeat-entertainment/images/artbeat-circle-logo-1.png"
-                            alt="" srcset="" class="brandImg">
+                        <img src="/artbeat-entertainment/images/artbeat-circle-logo-1.png" alt="" srcset=""
+                            class="brandImg">
                     </div>
                 </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -1496,15 +1514,15 @@
         <nav class="navbar navbar-dark py-2 menuNavbar play">
             <div class="navbarBrand ms-sm-5">
                 <a href="/artbeat-entertainment/index.html">
-                    <img src="/artbeat-entertainment/images/artbeat-circle-logo-1.png"
-                        alt="" srcset="" class="brandImg">
+                    <img src="/artbeat-entertainment/images/artbeat-circle-logo-1.png" alt="" srcset=""
+                        class="brandImg">
                 </a>
             </div>
             <button class="navbar-toggler ms-auto me-sm-5" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="material-icons-outlined" style="font-size: 2.25rem;">
                     menu
-                    </span>
+                </span>
             </button>
             <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent1">
                 <ul class="navbar-nav justify-content-between ms-2 me-5 mb-2 mb-lg-0">
@@ -1535,12 +1553,14 @@
                 <div class="row coverRow">
                     <div class="col-lg-6 col-12 coverContent">
                         <p class="coverText mt-0 mb-3 josefin">
-                            LOREM IPSUM DOLOR SIT AMET
+                            WELCOME TO THE
                         </p>
                         <h1 class="coverHeadline pt-2 pb-2 my-4 play">
-                            LOREM IPSUM
+                            HOUSE OF ENTERTAINMENT
                         </h1>
-                        <div class="buttonColumn px-0 py-0 play">
+                        <p class="josefin buttonColumn mt-2">We specialize in professional video production services</p>
+                        <br><br>
+                        <div class="px-0 py-0 play mb-2">
                             <a href="#" class="coverButton px-4 py-2">
                                 SEE MORE ABOUT US
                             </a>
@@ -1560,38 +1580,35 @@
             <div class="div1">
                 <h3>Our Services</h3>
                 <h1>What we do?</h1>
-                <p>If you hire a videographer of our team you will get a video professional to make a custom video for
-                    your
-                    business and, once the project is over.</p>
                 <button>VIEW ALL SERVICES</button>
             </div>
             <div class="div2" onmouseover="forwardAnimation" onmouseout="reverseAnimation">
-                <span class="span2"><img src="/artbeat-entertainment/images/ArtBEAT-WORK/Cinematic-Shorts.png" alt="" width="45px"></span>
-                <h1>Cinematic Shorts</h1>
-                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post production
-                    services
-                    can put the finishing touches.</p>
+                <span class="span2"><img src="/artbeat-entertainment/images/ArtBEAT-WORK/Cinematic-Shorts.png" alt=""
+                        width="45px"></span>
+                <h1>Motion Graphics</h1>
+                <p>We create pieces of animation which create the illusion of motion & rotation. Not a Rocket science!
+                    As We know what you want.</p>
             </div>
             <div class="div3">
-                <span class="span3"><img src="/artbeat-entertainment/images/ArtBEAT-WORK/Untitled-4.png" alt="" width="45px"></span>
+                <span class="span3"><img src="/artbeat-entertainment/images/ArtBEAT-WORK/Untitled-4.png" alt=""
+                        width="45px"></span>
                 <h1>Scripting and Editing</h1>
-                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post production
-                    services
-                    can put the finishing touches.</p>
+                <p>We develop suitable scripts with writers for production. After production, our in-house experienced
+                    editors will take care of the production.</p>
             </div>
             <div class="div4">
-                <span class="span4"><img src="/artbeat-entertainment/images/ArtBEAT-WORK/Untitled-1.png" alt="" width="45px"></span>
-                <h1>Casting</h1>
-                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post production
-                    services
-                    can put the finishing touches.</p>
+                <span class="span4"><img src="/artbeat-entertainment/images/ArtBEAT-WORK/Untitled-1.png" alt=""
+                        width="45px"></span>
+                <h1>Video Distribution</h1>
+                <p>We have produced the film and now our experts will plan for distribution to maximize success on each
+                    distribution channel. </p>
             </div>
             <div class="div5">
-                <span class="span5"><img src="/artbeat-entertainment/images/ArtBEAT-WORK/Untitled-3.png" alt="" width="45px"></span>
-                <h1>Video Production</h1>
-                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post production
-                    services
-                    can put the finishing touches.</p>
+                <span class="span5"><img src="/artbeat-entertainment/images/ArtBEAT-WORK/Untitled-3.png" alt=""
+                        width="45px"></span>
+                <h1>Video Hosting</h1>
+                <p>Your Command + Our experts’ advice + Your work, combined. Now sit back and let your work earn credits
+                    for you.</p>
             </div>
         </div>
     </div>
@@ -1938,7 +1955,7 @@
                     <div class="callto__text">
                         <h2 class="play">Fresh Ideas, Fresh Moments Giving Wings to your Stories.</h2>
                         <p class="josefin">INC5000, Best places to work 2019</p>
-                        <a href="#" class="play">Start your stories</a>
+                        <a href="http://www.artbeat.tech" target="_blank" class="play">Start your stories</a>
                     </div>
                 </div>
             </div>
