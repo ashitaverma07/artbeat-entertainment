@@ -31,6 +31,14 @@
 </head>
 
 <style>
+    :root {
+        --home-color: #C3BAAA;
+        --toplevel-color: #f2e8dd;
+        --aux-color: #FAF8D4;
+        --line-color: #f2f2f2;
+        --bg-color: #fff;
+    }
+
     body {
         background-color: #636363;
         color: #fff
@@ -146,16 +154,186 @@
         justify-content: center
     }
 
-    .section-1 div .sitemap{
-        transform: scale(0.75);
-    }
 
-    .sitemap .row{
+    .sitemap {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
         width: 70%;
     }
 
-    .sitemap:nth-child(2){
-        background-color: red;
+    .sitemap a {
+        position: relative;
+        z-index: 10;
+        display: inline-flex;
+        flex-direction: column;
+
+        padding: .5em 1em;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+
+        border-bottom-width: 3px;
+        background: #f9f9f9;
+
+        font-weight: 500;
+        text-decoration: none;
+        color: #595959;
+    }
+
+    .sitemap a:before {
+        margin-bottom: .3em;
+        content: attr(href);
+        font-size: .8em;
+        color: #aaa;
+    }
+
+    .sitemap-main {
+        position: relative;
+        flex: 1 1 100%;
+        order: 3;
+        margin-bottom: 1em;
+    }
+
+    .sitemap-main a {
+        margin-bottom: .5em;
+        margin-left: .2em;
+    }
+
+    .sitemap-main ul {
+        position: relative;
+        padding-left: 2em;
+    }
+
+    .sitemap-main>ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .sitemap-main>ul>li {
+        flex: 1 1 auto;
+    }
+
+    .sitemap li {
+        margin-right: 1em;
+        list-style: none;
+    }
+
+    /* Handle grid lines */
+    .sitemap-main li:before,
+    .sitemap-main li:after {
+        display: inline-block;
+        width: 1em;
+        height: 2em;
+        border: 2px solid var(--line-color);
+        border-right: none;
+        border-top: none;
+        content: "";
+    }
+
+    .sitemap-main li:after {
+        position: absolute;
+        left: 2em;
+        bottom: 0;
+        width: 2px;
+        height: 100%;
+    }
+
+    .sitemap-main ul:before {
+        position: absolute;
+        left: 0;
+        top: -2.75em;
+
+        display: block;
+        width: 2px;
+        height: 100%;
+
+        background: var(--bg-color);
+        content: "";
+    }
+
+    .sitemap-main>ul:before {
+        display: none;
+    }
+
+    .sitemap-main li:last-child:after {
+        border-color: var(--bg-color);
+        bottom: 0;
+        height: 2.7em;
+    }
+
+    /* The home/top level link */
+    .sitemap-root {
+        margin-bottom: 2em;
+    }
+
+    .sitemap-root>a {
+        min-width: 8em;
+        background: var(--home-color);
+        border-color: darken(var(--home-color), 10%);
+        color: #fff;
+    }
+
+    .sitemap-root>a:before {
+        color: var(--line-color);
+    }
+
+    .sitemap-root>a:after {
+        position: absolute;
+        bottom: -2.6em;
+        left: calc(2em - 1px);
+        display: block;
+        width: 2px;
+        height: 2em;
+        background: var(--line-color);
+        content: "";
+    }
+
+    .sitemap-main>ul>li>a {
+        background: var(--toplevel-color);
+        border-color: darken(var(--toplevel-color), 10%);
+    }
+
+    .sitemap-main ul ul ul a {
+        background: #fff;
+    }
+
+    .sitemap-aux {
+        order: 3;
+        font-size: .9em;
+    }
+
+    .sitemap-aux ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .sitemap-aux li {
+        margin: 0 .5em .5em 0;
+    }
+
+    .sitemap-aux a {
+        background: var(--aux-color);
+        border-color: darken(var(--aux-color), 10%);
+    }
+
+    @media (min-width: 420px) {
+        .sitemap {
+            justify-content: space-between;
+        }
+
+        .sitemap-aux ul {
+            justify-content: flex-end;
+        }
+    }
+
+    @media (min-width: 600px) {
+        .sitemap-aux {
+            order: 2;
+        }
     }
 
     @keyframes animationForCoverText {
@@ -284,10 +462,10 @@
             width: 100%
         }
 
-        .sitemap .row{
-        width: 90%;
-    }
-        
+        .sitemap .row {
+            width: 90%;
+        }
+
     }
 
     @media only screen and (max-width:768px) {
@@ -295,9 +473,10 @@
             position: absolute;
             width: 100%
         }
-        .section-1 div .sitemap{
-        transform: scale(1);
-    }
+
+        .section-1 div .sitemap {
+            transform: scale(1);
+        }
     }
 
     @media only screen and (max-width:360px) {
@@ -306,9 +485,9 @@
             width: 100%
         }
 
-        .sitemap .row{
-        width: 100%;
-    }
+        .sitemap .row {
+            width: 100%;
+        }
     }
 
     .footer_container {
@@ -618,44 +797,76 @@
         <div class="coverPage">
             <h1 class="play text-center">SITE MAP</h1>
         </div>
+        <ul class="sitemap mx-auto">
+            <li class="sitemap-root"><a href="/">Home</a></li>
+            <li class="sitemap-main">
+                <ul>
+                    <li>
+                        <a href="/about/">About</a>
+                        <ul>
+                            <li>
+                                <a href="/about/careers/">Careers</a>
+                            </li>
+                            <li>
+                                <a href="/about/giving/">Giving</a>
+                                <ul>
+                                    <li><a href="/about/giving/2013">2013</a></li>
+                                    <li><a href="/about/giving/2014">2014</a></li>
+                                    <li><a href="/about/giving/2015">2015</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/team/">Our Team</a>
+                        <ul>
+                            <li>
+                                <a href="/team/peter-baumgartner">Peter Baumgartner</a>
+                            </li>
+                            <li>
+                                <a href="/team/yann-malet">Yann Malet</a>
+                            </li>
+                            <li>
+                                <a href="/team/martin-mahner">Martin Mahner</a>
+                            </li>
+                            <li>
+                                <a href="/team/joni-trythall">Joni Trythall</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/portfolio/">Portfolio</a>
+                        <ul>
+                            <li>
+                                <a href="/portfolio/bank">Bank Project</a>
+                            </li>
+                            <li>
+                                <a href="/portfolio/startup">Startup Project</a>
+                            </li>
+                            <li>
+                                <a href="/portfolio/community">Community Project</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="/services/">Services</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                </ul>
+            </li>
 
-        <div class="text-center sitemap mt-5">
-            <div class="row mx-auto">
-                <div class="col">
-                    <a href="/artbeat-entertainment/index.html">
-                        <button class="btn btn-secondary play">ARTBEAT ENTERTAINMENT</button>
-                    </a>
-                </div>
-            </div>
-            <div class="row mx-auto mt-sm-auto mt-3">
-                <div class="col-sm-2 col-12 ms-auto me-auto my-sm-5 my-2">
-                    <a href="/artbeat-entertainment/index.html">
-                        <button class="btn btn-info">Home</button>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-12 ms-auto me-auto my-sm-5 my-2">
-                    <a href="/artbeat-entertainment/about-us/index.html">
-                        <button class="btn btn-info">About</button>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-12 ms-auto me-auto my-sm-5 my-2">
-                    <a href="/artbeat-entertainment/portfolio/index.html">
-                        <button class="btn btn-info">Portfolio</button>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-12 ms-auto me-auto my-sm-5 my-2">
-                    <a href="/artbeat-entertainment/our-services/index.html">
-                        <button class="btn btn-info">Services</button>
-                    </a>
-                </div>
-                <div class="col-sm-2 col-12 ms-auto me-auto my-sm-5 my-2">
-                    <a href="/artbeat-entertainment/contact-us/index.html">
-                        <button class="btn btn-info">Contact</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-
+            <li class="sitemap-aux">
+                <ul>
+                    <li>
+                        <a href="/contact/">Newsletter</a>
+                    </li>
+                    <li>
+                        <a href="/privacy/">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="/terms/">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
     <div class="footer_container">
 
