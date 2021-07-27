@@ -597,6 +597,10 @@
 
     @media only screen and (max-width: 576px) {
 
+        .owl-carousel .border h3 {
+            height: 15vh!important;
+        }
+
         .coverPage {
             padding: 30vh 0 25vh 0;
             display: flex;
@@ -642,9 +646,9 @@
         }
 
         .section-3 .team_item:hover .lastText {
-        height: 100%!important;
-        bottom: -30px;
-    }
+            height: 100% !important;
+            bottom: -30px;
+        }
     }
 
     /*section-3*/
@@ -715,9 +719,9 @@
         justify-content: center;
         background-clip: content-box;
     }
-    
-    .firstText{
-        height: 100%!important;
+
+    .firstText {
+        height: 100% !important;
     }
 
     .section-3 .team_item:hover .team_item_text {
@@ -966,8 +970,25 @@
         padding-top: 10vh;
     }
 
-    .owl-carousel .border:hover {
-        background: url(images/drone.webp) no-repeat center center/cover;
+    .owl-carousel .border h3 {
+        height: 25vh;
+    }
+
+    .owl-carousel .border p:nth-child(3) {
+        height: 45vh;
+    }
+
+    #blog1:hover{
+        background: url(images/blog1.jpg) no-repeat center center/cover;
+    }
+    #blog2:hover{
+        background: url(images/blog2.jpg) no-repeat center center/cover;
+    }
+    #blog3:hover{
+        background: url(images/blog3.jpg) no-repeat center center/cover;
+    }
+    #blog4:hover{
+        background: url(images/blog4.jpg) no-repeat center center/cover;
     }
 
     .owl-nav button {
@@ -1486,8 +1507,7 @@
             <div class="container-fluid">
                 <a href="/artbeat-entertainment/index.html">
                     <div class="navbarBrand">
-                        <img src="/artbeat-entertainment/images/new.png" alt="" srcset=""
-                            class="brandImg">
+                        <img src="/artbeat-entertainment/images/new.png" alt="" srcset="" class="brandImg">
                     </div>
                 </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -1539,8 +1559,7 @@
         <nav class="navbar navbar-dark py-2 menuNavbar play">
             <div class="navbarBrand ms-sm-5">
                 <a href="/artbeat-entertainment/index.html">
-                    <img src="/artbeat-entertainment/images/new.png" alt="" srcset=""
-                        class="brandImg">
+                    <img src="/artbeat-entertainment/images/new.png" alt="" srcset="" class="brandImg">
                 </a>
             </div>
             <button class="navbar-toggler ms-auto me-sm-5" type="button" data-bs-toggle="collapse"
@@ -1583,7 +1602,7 @@
                         <h1 class="coverHeadline pt-2 pb-2 my-4 play">
                             HOUSE OF ENTERTAINMENT
                         </h1>
-                        <h5 class="p buttonColumn">ARTBEAT - LIFTING CONTENT TO HEIGHTS</h5><br><br>
+                        <h5 class="p buttonColumn"><q>Picturising the Emotions</q></h5><br><br>
                         <p class="josefin buttonColumn mt-2">We specialize in professional video production services</p>
                         <br><br>
                         <div class="px-0 py-0 play mb-2">
@@ -1914,61 +1933,43 @@
         <h1 class="text-center play">BLOG UPDATE</h1>
         <div class="hr mx-auto"></div>
         <div class="owl-carousel owl-theme owl-loaded owl-drag w-75 mx-auto">
-            <div class="border border-1 border-primary px-4 py-5">
-                <h3 class="fw-bold play">What makes user want to share video on social media?</h3>
+            <div class="border border-1 border-primary px-4 py-5" id="blog1">
+                <h3 class="fw-bold play">Video Production- A glimpse into the technique</h3>
                 <p class="josefin fw-lighter fst-italic py-2">Jan 03 2020</p>
-                <p class="josefin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quasi perspiciatis
-                    tempora sed et! Beatae corrupti eum delectus, quas eaque soluta maiores similique dolorum earum
-                    velit saepe non a amet.</p>
-                <a href="" class="text-muted">Read more -></a>
+                <p class="josefin">In the rapidly evolving world, which is reaching new heights of technical
+                    superiorities in every new world, one can see the birth of new tools to make your boring world
+                    creative and interesting. We, being a video production company, tend to bring out one of those
+                    exciting aspects of technology into the light.</p>
+                <a href="https://medium.com/@ashita.verma2020/video-production-a-glimpse-into-the-technique-1de938fb4197"
+                    target="_blank" class="text-muted">Read more -></a>
             </div>
-            <div class="border border-1 border-primary px-4 py-5">
-                <h3 class="fw-bold play">What makes user want to share video on social media?</h3>
+            <div class="border border-1 border-primary px-4 py-5" id="blog2">
+                <h3 class="fw-bold play">Social Influencers — Interconnection with marketing companies</h3>
                 <p class="josefin fw-lighter fst-italic py-2">Jan 03 2020</p>
-                <p class="josefin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quasi perspiciatis
-                    tempora sed et! Beatae corrupti eum delectus, quas eaque soluta maiores similique dolorum earum
-                    velit saepe non a amet.</p>
-                <a href="" class="text-muted">Read more -></a>
+                <p class="josefin">Over the last two decades, social media has become a crucial part of our lives- and a
+                    major way for multinationals, brands, social and film industries to reach new audiences every time
+                    with new and interesting content.</p>
+                <a href="https://medium.com/@ashita.verma2020/social-influencers-interconnection-with-marketing-companies-1a01a8d03e8f"
+                    target="_blank" class="text-muted">Read more -></a>
             </div>
-            <div class="border border-1 border-primary px-4 py-5">
-                <h3 class="fw-bold play">What makes user want to share video on social media?</h3>
+            <div class="border border-1 border-primary px-4 py-5" id="blog3">
+                <h3 class="fw-bold play">Artbeat Entertainment — The vision of Mr. Rahul Rasimo</h3>
                 <p class="josefin fw-lighter fst-italic py-2">Jan 03 2020</p>
-                <p class="josefin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quasi perspiciatis
-                    tempora sed et! Beatae corrupti eum delectus, quas eaque soluta maiores similique dolorum earum
-                    velit saepe non a amet.</p>
-                <a href="" class="text-muted">Read more -></a>
+                <p class="josefin">Rahul Rasimo, being the founder of Artbeat Entertainment as well as the lead director
+                    in the company, is committed to providing quality film production to his audience with a load of
+                    premium content. But every new beginning is bound to be quite tough and challenging in itself.</p>
+                <a href="https://medium.com/@ashita.verma2020/artbeat-entertainment-the-vision-of-mr-rahul-rasimo-20e68292c658"
+                    target="_blank" class="text-muted">Read more -></a>
             </div>
-            <div class="border border-1 border-primary px-4 py-5">
-                <h3 class="fw-bold play">What makes user want to share video on social media?</h3>
+            <div class="border border-1 border-primary px-4 py-5" id="blog4">
+                <h3 class="fw-bold play">“Acting is behaving truthfully under imaginary circumstances” - Sanford Meisner
+                </h3>
                 <p class="josefin fw-lighter fst-italic py-2">Jan 03 2020</p>
-                <p class="josefin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quasi perspiciatis
-                    tempora sed et! Beatae corrupti eum delectus, quas eaque soluta maiores similique dolorum earum
-                    velit saepe non a amet.</p>
-                <a href="" class="text-muted">Read more -></a>
-            </div>
-            <div class="border border-1 border-primary px-4 py-5">
-                <h3 class="fw-bold play">What makes user want to share video on social media?</h3>
-                <p class="josefin fw-lighter fst-italic py-2">Jan 03 2020</p>
-                <p class="josefin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quasi perspiciatis
-                    tempora sed et! Beatae corrupti eum delectus, quas eaque soluta maiores similique dolorum earum
-                    velit saepe non a amet.</p>
-                <a href="" class="text-muted">Read more -></a>
-            </div>
-            <div class="border border-1 border-primary px-4 py-5">
-                <h3 class="fw-bold play">What makes user want to share video on social media?</h3>
-                <p class="josefin fw-lighter fst-italic py-2">Jan 03 2020</p>
-                <p class="josefin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quasi perspiciatis
-                    tempora sed et! Beatae corrupti eum delectus, quas eaque soluta maiores similique dolorum earum
-                    velit saepe non a amet.</p>
-                <a href="" class="text-muted">Read more -></a>
-            </div>
-            <div class="border border-1 border-primary px-4 py-5">
-                <h3 class="fw-bold play">What makes user want to share video on social media?</h3>
-                <p class="josefin fw-lighter fst-italic py-2">Jan 03 2020</p>
-                <p class="josefin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quasi perspiciatis
-                    tempora sed et! Beatae corrupti eum delectus, quas eaque soluta maiores similique dolorum earum
-                    velit saepe non a amet.</p>
-                <a href="" class="text-muted">Read more -></a>
+                <p class="josefin">What comes to our mind once we think of acting? Portraying a known role in our unique
+                    way, isn’t it? We think acting is just playing a lead in a high school drama or a big roleplay in a
+                    theatre. Acting is a natural talent that is present in each one of us.</p>
+                <a href="https://medium.com/@ashita.verma2020/acting-is-behaving-truthfully-under-imaginary-circumstances-fce31c043f27"
+                    target="_blank" class="text-muted">Read more -></a>
             </div>
         </div>
         <div class="owl-nav disabled"></div>
