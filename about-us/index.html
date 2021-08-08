@@ -1111,16 +1111,15 @@
         height: 10px;
         transition: all 300ms ease-in-out;
     }*/
-
     @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 
     @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 
-
-    /*.foot {
-        display: flex;
-        margin: -30px;
-    }*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
     .footer_container {
         color: white;
@@ -1135,10 +1134,6 @@
         grid-template-rows: 1fr;
         grid-row-gap: 0px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    #foothead {
-        color: #ffffff;
     }
 
     .column1 {
@@ -1233,6 +1228,14 @@
         text-align: center !important;
     }
 
+    .footer .text-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
     @media only screen and (max-width: 1400px) {}
 
     @media only screen and (max-width: 1200px) {}
@@ -1257,9 +1260,9 @@
         .footer {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: 0.5fr 1fr;
             grid-column-gap: 0px;
-            grid-row-gap: 30px;
+            grid-row-gap: 40px;
         }
 
         .column1 {
@@ -1305,9 +1308,9 @@
         .footer {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 0.5fr) 1fr;
             grid-column-gap: 0px;
-            grid-row-gap: 20px;
+            grid-row-gap: 0px;
         }
 
         .column1 {
@@ -1326,7 +1329,6 @@
             padding-bottom: 0;
         }
 
-
         .column4 {
             grid-area: 4 / 1 / 5 / 2;
         }
@@ -1336,15 +1338,6 @@
             width: 40px;
             line-height: 44px;
         }
-
-        /*.cls,.cls2{
-            margin-left: 45px;
-        }
-        .cls3,.cls4{
-            text-align: left;
-           margin-left: 45px;
-        }*/
-
     }
 </style>
 
@@ -2069,79 +2062,68 @@
     </section>-->
 
                 <!--footer-->
-                <div class="foot">
-                    <div class="footer_container">
 
-                        <div class="footer">
-                            <div class="cls">
-                                <div class="column1">
-                                    <ul>
-                                        <li><a href="/artbeat-entertainment/contact-us/contactus.html">Contact Us</a>
-                                        </li>
-                                        <li><a href="/artbeat-entertainment/contact-us/cookies.html">Cookies and
-                                                Preferences</a></li>
-                                        <li><a href="/artbeat-entertainment/privacy-and-policy/index.html">Privacy
-                                                Policy</a></li>
-                                        <li><a href="/artbeat-entertainment/site-map/index.html">Site map</a></li>
-                                        <!-- <li><a href="/artbeat-entertainment/report-abuse/index.html">Report Abuse</a></li> -->
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cls2">
-                                <div class="column2">
-                                    <ul>
-                                        <li><a href="/artbeat-entertainment/careers/index.html">Career</a></li>
-                                        <li><a href="/artbeat-entertainment/blog/index.html">Blog</a></li>
-                                        <li><a href="/artbeat-entertainment/index.html">Team</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cls3">
-                                <div class="column3">
-                                    <h1 id="foothead">About Us </h1>
-                                    <p>At Artbeat Entertainment, we believe in creating best-in-class content to give
-                                        the
-                                        finest experience to our viewers with passion and creativity.<br><a
-                                            href="/about-us/index.html"
-                                            style="text-decoration: underline; color: #adadad;">
-                                            Get to know us → </a></p>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="cls4">
-                                <div class="column4">
-                                    <div class="text-center">
-                                        <img src="img/artbeat-circle-logo.png" alt="LOGO" width="50%" class="mb-2">
-                                        <ul>
-                                            <li>
-                                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href=""><i class="fab fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href=""><i class="fab fa-instagram"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href=""><i class="fab fa-youtube"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
+            </div>
 
-                                </div>
-                            </div>
+            <div class="footer_container">
 
-                        </div>
+                <div class="footer">
+                    <div class="column1">
+                        <ul>
+                            <li><a href="/artbeat-entertainment/contact-us/contactus.html">Contact Us</a></li>
+                            <li><a href="/artbeat-entertainment/contact-us/cookies.html">Cookies and Preferences</a>
+                            </li>
+                            <li><a href="/artbeat-entertainment/privacy-and-policy/index.html">Privacy Policy</a></li>
+                            <li><a href="/artbeat-entertainment/site-map/index.html">Site map</a></li>
+                            <!-- <li><a href="/artbeat-entertainment/report-abuse/index.html">Report Abuse</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="column2">
+                        <ul>
+                            <li><a href="/artbeat-entertainment/careers/index.html">Career</a></li>
+                            <li><a href="/artbeat-entertainment/blog/index.html">Blog</a></li>
+                            <li><a href="/artbeat-entertainment/index.html">Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="column3">
+                        <h1 style="color: white;"> About Us </h1>
+                        <p>At Artbeat Entertainment, we believe in creating best-in-class content to give the finest
+                            experience
+                            to our viewers with passion and creativity.<br><a
+                                href="/artbeat-entertainment/about-us/index.html"
+                                style="text-decoration: underline; color: #adadad;"> Get to know us → </a></p>
 
-                        <div class="footer_end">
-                            <p>Copyright © 2021 All rights reserved</p>
+                    </div>
+                    <div class="column4">
+                        <div class="text-center">
+                            <img src="/images/artbeat-circle-logo.png" alt="LOGO" width="50%" class="mb-2">
+                            <ul>
+                                <li>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </li>
+                            </ul>
                         </div>
 
                     </div>
+
                 </div>
+
+                <div class="footer_end">
+                    <p>Copyright © 2021 Artbeat Entertainment Pvt. Ltd. All rights reserved.</p>
+                </div>
+
             </div>
 
             <!-- jQuery -->
