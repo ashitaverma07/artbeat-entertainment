@@ -82,7 +82,7 @@
 
 
     .brandImg {
-        width: 200px;
+        width: 150px;
     }
 
     .menuNavbar {
@@ -121,7 +121,7 @@
 
     .navLink {
         position: relative;
-        font-size: 1.3rem;
+        font-size: 1.15rem;
         color: #ffffff;
         text-decoration: none;
     }
@@ -400,7 +400,24 @@
         margin-top: 26px;
         margin-bottom: 18px;
     }
-
+    #ud1:after {
+    position: absolute;
+    left: 15px;
+    bottom: 102px;
+    height: 5px;
+    width: 178px;
+    background: #00bfe7;
+    content: "";
+}
+#ud2:after {
+    position: absolute;
+    left: 15px;
+    bottom: 102px;
+    height: 5px;
+    width: 137px;
+    background: #00bfe7;
+    content: "";
+}
 
 
     .du {
@@ -668,7 +685,7 @@
     }
 
     .team_item_6 {
-        background: url(img/aman-sinha.jpeg) no-repeat top center/cover;
+        background: url(img/aman-sinha.jpg) no-repeat top center/cover;
     }
 
     .team_item_7 {
@@ -676,7 +693,6 @@
     }
 
     .team_item_8 {
-        /* background: url(https://preview.colorlib.com/theme/videograph/img/team/team-4.jpg) no-repeat top center/cover; */
         background: url(img/image-8.jpg) no-repeat top center/cover;
     }
 
@@ -1111,15 +1127,16 @@
         height: 10px;
         transition: all 300ms ease-in-out;
     }*/
+
     @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 
     @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+
+    /*.foot {
+        display: flex;
+        margin: -30px;
+    }*/
 
     .footer_container {
         color: white;
@@ -1134,6 +1151,10 @@
         grid-template-rows: 1fr;
         grid-row-gap: 0px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #foothead {
+        color: #ffffff;
     }
 
     .column1 {
@@ -1228,14 +1249,6 @@
         text-align: center !important;
     }
 
-    .footer .text-center {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-
     @media only screen and (max-width: 1400px) {}
 
     @media only screen and (max-width: 1200px) {}
@@ -1260,9 +1273,9 @@
         .footer {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 0.5fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
             grid-column-gap: 0px;
-            grid-row-gap: 40px;
+            grid-row-gap: 30px;
         }
 
         .column1 {
@@ -1308,9 +1321,9 @@
         .footer {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, 0.5fr) 1fr;
+            grid-template-rows: repeat(4, 1fr);
             grid-column-gap: 0px;
-            grid-row-gap: 0px;
+            grid-row-gap: 20px;
         }
 
         .column1 {
@@ -1329,6 +1342,7 @@
             padding-bottom: 0;
         }
 
+
         .column4 {
             grid-area: 4 / 1 / 5 / 2;
         }
@@ -1338,6 +1352,15 @@
             width: 40px;
             line-height: 44px;
         }
+
+        /*.cls,.cls2{
+            margin-left: 45px;
+        }
+        .cls3,.cls4{
+            text-align: left;
+           margin-left: 45px;
+        }*/
+
     }
 </style>
 
@@ -1345,7 +1368,7 @@
 
     <!--navbar-->
     <div class="section-1">
-        <nav class="navbar navbar-expand-xl navbar-dark py-2 play">
+        <nav class="navbar navbar-expand-xl navbar-dark py-3 play">
             <div class="container-fluid">
                 <a href="/artbeat-entertainment/index.html">
                     <div class="navbarBrand">
@@ -1494,7 +1517,7 @@
                                                 <img src="/artbeat-entertainment/about-us/img/Untitled-3.png" alt=""
                                                     width="60%">
                                             </div>
-                                            <h4 class="dis">Video distribution</h4>
+                                            <h4 class="dis" id="ud1">Video distribution</h4>
                                             <p class="du">Whether you’re halfway through the editing process, or you.
                                             </p>
                                         </div>
@@ -1505,7 +1528,7 @@
                                                 <img src="/artbeat-entertainment/about-us/img/Cinematic-Shorts.png"
                                                     alt="" width="50%">
                                             </div>
-                                            <h4 class="dis">Video hosting</h4>
+                                            <h4 class="dis" id="ud2">Video hosting</h4>
                                             <p class="du">Whether you’re halfway through the editing process, or you.
                                             </p>
                                         </div>
@@ -1575,44 +1598,36 @@
                                     <div
                                         class="team_item col-md-6 col-12 innerHalfColumn pe-md-0 ps-md-2 pe-sm-2 ps-sm-2 gx-md-0 pb-sm-2 pb-md-0 ps-0 pe-4 pb-2">
                                         <a href="https://www.youtube.com/watch?v=kmx9TuU4DSg" target="_blank">
-                                            <span class="material-icons-outlined">
-                                                play_circle
-                                            </span>
+
                                             <img src="http://i3.ytimg.com/vi/kmx9TuU4DSg/maxresdefault.jpg" alt="">
                                             <div
                                                 class="team_item_text firstText pe-md-0 ps-md-2 pe-sm-2 ps-sm-2 gx-md-0 pb-sm-2 pb-md-0 ps-0 pe-4 pb-2">
-                                                <p class="josefin">GHARWALI- BAHARWALI | Web Series- S01E02 | Ojas
-                                                    Mendiratta Ft.@Harshdeep Ahuja
-                                                </p>
+                                                <h4 class="play">LOREM IPSUM</h4>
+                                                <p class="josefin">Lorem ipsum dolor sit amet.</p>
                                             </div>
                                         </a>
                                     </div>
                                     <div
                                         class=" team_item col-md-3 col-sm-6 col-12 innerHalfColumn pe-md-0 gx-md-0 pe-sm-2 ps-sm-2 pt-sm-2 pt-md-0 pb-md-0 pb-sm-2 ps-0 pe-4 ps-0 pe-4 pb-2 pt-1">
                                         <a href="https://www.youtube.com/watch?v=zYjmAXR0OXk" target="_blank">
-                                            <span class="material-icons-outlined">
-                                                play_circle
-                                            </span>
+
                                             <img src="http://i3.ytimg.com/vi/zYjmAXR0OXk/maxresdefault.jpg" alt="">
                                             <div
                                                 class="team_item_text pe-md-0 gx-md-0 pe-sm-2 ps-sm-2 pt-sm-2 pt-md-0 pb-md-0 pb-sm-2 ps-0 pe-4 ps-0 pe-4 pb-2 pt-1">
-                                                <p class="josefin">Mere Baap ki Shaadi - Netfate Short movies
-                                                </p>
+                                                <h4 class="play">LOREM IPSUM</h4>
+                                                <p class="josefin">Lorem ipsum dolor sit amet.</p>
                                             </div>
                                         </a>
                                     </div>
                                     <div
                                         class=" team_item col-md-3 col-sm-6 col-12 innerHalfColumn px-0 pe-sm-2 ps-sm-2 pt-sm-2 pt-md-0 pb-md-0 pb-sm-2 ps-0 pe-4 pb-2 pt-1">
                                         <a href="https://www.youtube.com/watch?v=fW6eMGjel0U" target="_blank">
-                                            <span class="material-icons-outlined">
-                                                play_circle
-                                            </span>
+
                                             <img src="http://i3.ytimg.com/vi/fW6eMGjel0U/hqdefault.jpg" alt="">
                                             <div
                                                 class="team_item_text px-0 pe-sm-2 ps-sm-2 pt-sm-2 pt-md-0 pb-md-0 pb-sm-2 ps-0 pe-4 pb-2 pt-1">
-                                                <p class="josefin">Mein Kisi Se Kam Nahi | Guddu Bhaiya Video | Netfate
-                                                    Short Movies
-                                                </p>
+                                                <h4 class="play">LOREM IPSUM</h4>
+                                                <p class="josefin">Lorem ipsum dolor sit amet.</p>
                                             </div>
                                         </a>
                                     </div>
@@ -1621,44 +1636,36 @@
                                     <div
                                         class=" team_item col-md-3 col-sm-6 col-12 innerHalfColumn pe-md-1 gx-md-0 pe-sm-2 ps-sm-2 pt-sm-2 pt-md-0 pb-md-0 pb-sm-2 ps-0 pe-4 pb-2 pt-1">
                                         <a href="https://www.youtube.com/watch?v=5_8M3qtCklE" target="_blank">
-                                            <span class="material-icons-outlined">
-                                                play_circle
-                                            </span>
+
                                             <img src="http://i3.ytimg.com/vi/5_8M3qtCklE/maxresdefault.jpg" alt="">
                                             <div
                                                 class="team_item_text pe-md-1 gx-md-0 pe-sm-2 ps-sm-2 pt-sm-2 pt-md-0 pb-md-0 pb-sm-2 ps-0 pe-4 pb-2 pt-1">
-                                                <p class="josefin">Blind Date With Ex | When you date your Ex | Ex
-                                                    Girlfriend | The Inbox
-                                                </p>
+                                                <h4 class="play">LOREM IPSUM</h4>
+                                                <p class="josefin">Lorem ipsum dolor sit amet.</p>
                                             </div>
                                         </a>
                                     </div>
                                     <div
                                         class="team_item col-md-3 col-sm-6 col-12 innerHalfColumn pe-md-0 gx-md-0 pe-sm-2 ps-sm-2 pt-sm-2 pt-md-0 pb-md-0 pb-sm-2 ps-0 pe-4 pb-2 pt-1">
                                         <a href="https://www.youtube.com/watch?v=nNMFigmKdKI" target="_blank">
-                                            <span class="material-icons-outlined">
-                                                play_circle
-                                            </span>
+
                                             <img src="http://i3.ytimg.com/vi/nNMFigmKdKI/maxresdefault.jpg" alt="">
                                             <div
                                                 class="team_item_text pe-md-0 gx-md-0 pe-sm-2 ps-sm-2 pt-sm-2 pt-md-0 pb-md-0 pb-sm-2 ps-0 pe-4 pb-2 pt-1">
-                                                <p class="josefin">Yaar Mere Velle | Pradeep Dhaka | Firoz Khan | Rahul
-                                                    Rasimo | Latest Haryanvi Song 2019
-                                                </p>
+                                                <h4 class="play">LOREM IPSUM</h4>
+                                                <p class="josefin">Lorem ipsum dolor sit amet.</p>
                                             </div>
                                         </a>
                                     </div>
                                     <div
                                         class=" team_item col-md-6 col-12 innerHalfColumn px-0 pe-sm-2 ps-sm-2 pt-sm-2 pt-md-0 pb-md-0 pb-sm-2 ps-0 pe-4 pb-2 pt-1">
-                                        <a href="https://www.youtube.com/watch?v=iJ0fFKixJs0" target="_blank">
-                                            <span class="material-icons-outlined">
-                                                play_circle
-                                            </span>
-                                            <img src="http://i3.ytimg.com/vi/iJ0fFKixJs0/maxresdefault.jpg" alt="">
+                                        <a href="https://www.youtube.com/watch?v=GnqvUDDEe74" target="_blank">
+
+                                            <img src="http://i3.ytimg.com/vi/GnqvUDDEe74/maxresdefault.jpg" alt="">
                                             <div
                                                 class="team_item_text px-0 pe-sm-2 ps-sm-2 pt-sm-2 pt-md-0 pb-md-0 pb-sm-2 ps-0 pe-4 pb-2 pt-1">
-                                                <p class="josefin">MATRAM | Micro Short Film | PhrankTV Philms
-                                                </p>
+                                                <h4 class="play">LOREM IPSUM</h4>
+                                                <p class="josefin">Lorem ipsum dolor sit amet.</p>
                                             </div>
                                         </a>
                                     </div>
@@ -1666,254 +1673,252 @@
                             </div>
                         </div>
                         <div class=" team_item col-md-4 col-12 pe-md-2 gx-md-0 py-md-2 px-md-0 px-sm-3 pt-md-2 pt-sm-2">
-                            <a href="https://www.youtube.com/watch?v=GnqvUDDEe74" target="_blank">
-                                <span class="material-icons-outlined">
-                                    play_circle
-                                </span>
-                                <img src="http://i3.ytimg.com/vi/GnqvUDDEe74/maxresdefault.jpg" alt="">
+                            <a href="https://www.youtube.com/watch?v=iJ0fFKixJs0" target="_blank">
+
+                                <img src="http://i3.ytimg.com/vi/iJ0fFKixJs0/maxresdefault.jpg" alt="">
                                 <div
                                     class="team_item_text lastText pe-md-2 gx-md-0 py-md-2 px-md-0 px-sm-3 pt-md-2 pt-sm-2">
-                                    <p class="josefin">Virgin@21 | 18+ Web Series | Episode-3 - Ayaashi | PhrankTV
-                                        Philms Originals
-                                    </p>
+                                    <h4 class="play">LOREM IPSUM</h4>
+                                    <p class="josefin">Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <!--team member-->
-                <div class="section-5 py-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="hea">
-                                <div class="col-lg-12 py-lg-2 py-5 imageColumn">
-                                    <p class="josefin">NICE TO MEET</p>
-                                    <h1 class="play">OUR TEAM</h1>
-                                </div>
+            </div>
+            <!--team member-->
+            <div class="section-5 py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="hea">
+                            <div class="col-lg-12 py-lg-2 py-5 imageColumn">
+                                <p class="josefin">NICE TO MEET</p>
+                                <h1 class="play">OUR TEAM</h1>
                             </div>
+                        </div>
 
-                            <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
-                                <div class="one">
-                                    <div class="team_item team_item_1">
-                                        <div class="team_item_text">
-                                            <h4 class="play">RAHUL RASIMO</h4>
-                                            <p class="josefin">Videographer</p>
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div id="fb" class="col-2">
+                        <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
+                            <div class="one">
+                                <div class="team_item team_item_1">
+                                    <div class="team_item_text">
+                                        <h4 class="play">RAHUL RASIMO</h4>
+                                        <p class="josefin">Videographer</p>
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div id="fb" class="col-2">
 
-                                                        <ion-icon name="logo-facebook"></ion-icon>
-                                                    </div>
+                                                    <ion-icon name="logo-facebook"></ion-icon>
+                                                </div>
 
-                                                    <div id="twi" class="col-2">
-                                                        <ion-icon name="logo-twitter"></ion-icon>
-                                                    </div>
-                                                    <div id="insta" class="col-2">
-                                                        <ion-icon name="logo-instagram"></ion-icon>
-                                                    </div>
-                                                    <div id="yt" class="col-2">
-                                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                                    </div>
+                                                <div id="twi" class="col-2">
+                                                    <ion-icon name="logo-twitter"></ion-icon>
+                                                </div>
+                                                <div id="insta" class="col-2">
+                                                    <ion-icon name="logo-instagram"></ion-icon>
+                                                </div>
+                                                <div id="yt" class="col-2">
+                                                    <ion-icon name="logo-linkedin"></ion-icon>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
-                                <div class="two">
-                                    <div class="team_item team_item_2">
-                                        <div class="team_item_text">
-                                            <h4 class="play">AKASH GUPTA</h4>
-                                            <p class="josefin">Videographer</p>
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-facebook"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-twitter"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-instagram"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                                    </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
+                            <div class="two">
+                                <div class="team_item team_item_2">
+                                    <div class="team_item_text">
+                                        <h4 class="play">AKASH GUPTA</h4>
+                                        <p class="josefin">Videographer</p>
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-facebook"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-twitter"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-instagram"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-linkedin"></ion-icon>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 pb-md-0 pb-3 imageColumn">
-                                <div class="three">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 pb-md-0 pb-3 imageColumn">
+                            <div class="three">
 
 
-                                    <div class="team_item team_item_3">
-                                        <div class="team_item_text">
-                                            <h4 class="play">AVINASH KUMAR</h4>
-                                            <p class="josefin">Videographer</p>
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div id="fb" class="col-2">
+                                <div class="team_item team_item_3">
+                                    <div class="team_item_text">
+                                        <h4 class="play">AVINASH KUMAR</h4>
+                                        <p class="josefin">Videographer</p>
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div id="fb" class="col-2">
 
-                                                        <ion-icon name="logo-facebook"></ion-icon>
-                                                    </div>
+                                                    <ion-icon name="logo-facebook"></ion-icon>
+                                                </div>
 
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-twitter"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-instagram"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                                    </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-twitter"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-instagram"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-linkedin"></ion-icon>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
-                                <div class="four">
-                                    <div class="team_item team_item_4">
-                                        <div class="team_item_text">
-                                            <h4 class="play">KUNAL KUMAR</h4>
-                                            <p class="josefin">Videographer</p>
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-facebook"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-twitter"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-instagram"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                                    </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
+                            <div class="four">
+                                <div class="team_item team_item_4">
+                                    <div class="team_item_text">
+                                        <h4 class="play">KUNAL KUMAR</h4>
+                                        <p class="josefin">Videographer</p>
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-facebook"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-twitter"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-instagram"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-linkedin"></ion-icon>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
-                                <div class="five">
-                                    <div class="team_item team_item_5">
-                                        <div class="team_item_text">
-                                            <h4 class="play">ANKIT KUMAR</h4>
-                                            <p class="josefin">Videographer</p>
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-facebook"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-twitter"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-instagram"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                                    </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
+                            <div class="five">
+                                <div class="team_item team_item_5">
+                                    <div class="team_item_text">
+                                        <h4 class="play">ANKIT KUMAR</h4>
+                                        <p class="josefin">Videographer</p>
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-facebook"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-twitter"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-instagram"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-linkedin"></ion-icon>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
-                                <div class="six">
-                                    <div class="team_item team_item_6">
-                                        <div class="team_item_text">
-                                            <h4 class="play">AMAN SINHA</h4>
-                                            <p class="josefin">Videographer</p>
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-facebook"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-twitter"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-instagram"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                                    </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
+                            <div class="six">
+                                <div class="team_item team_item_6">
+                                    <div class="team_item_text">
+                                        <h4 class="play">AMAN SINHA</h4>
+                                        <p class="josefin">Videographer</p>
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-facebook"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-twitter"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-instagram"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-linkedin"></ion-icon>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
-                                <div class="seven">
-                                    <div class="team_item team_item_7">
-                                        <div class="team_item_text">
-                                            <h4 class="play">ABHIJEET KALYAN</h4>
-                                            <p class="josefin">Videographer</p>
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-facebook"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-twitter"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-instagram"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                                    </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
+                            <div class="seven">
+                                <div class="team_item team_item_7">
+                                    <div class="team_item_text">
+                                        <h4 class="play">ABHIJEET KALYAN</h4>
+                                        <p class="josefin">Videographer</p>
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-facebook"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-twitter"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-instagram"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-linkedin"></ion-icon>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
-                                <div class="eight">
-                                    <div class="team_item team_item_8">
-                                        <div class="team_item_text">
-                                            <h4 class="play">AMANDA STONE</h4>
-                                            <p class="josefin">Videographer</p>
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-facebook"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-twitter"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-instagram"></ion-icon>
-                                                    </div>
-                                                    <div id="fb" class="col-2">
-                                                        <ion-icon name="logo-linkedin"></ion-icon>
-                                                    </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 px-lg-0 px-2 imageColumn">
+                            <div class="eight">
+                                <div class="team_item team_item_8">
+                                    <div class="team_item_text">
+                                        <h4 class="play">AMANDA STONE</h4>
+                                        <p class="josefin">Videographer</p>
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-facebook"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-twitter"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-instagram"></ion-icon>
+                                                </div>
+                                                <div id="fb" class="col-2">
+                                                    <ion-icon name="logo-linkedin"></ion-icon>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
-                </div>
 
-                <!--testimonial-->
-                <!--  <section>
+                </div>
+            </div>
+
+            <!--testimonial-->
+            <!--  <section>
         <div class="conta">
             <div class="section-title">
                 <h2 class="love">Loved by clients</h2>
@@ -2061,134 +2066,144 @@
 
     </section>-->
 
-                <!--footer-->
+            <!--footer-->
+            <div class="foot">
+                <div class="footer_container">
 
-            </div>
+                    <div class="footer">
+                        <div class="cls">
+                            <div class="column1">
+                                <ul>
+                                    <li><a href="/artbeat-entertainment/contact-us/contactus.html">Contact Us</a></li>
+                                    <li><a href="/artbeat-entertainment/contact-us/cookies.html">Cookies and
+                                            Preferences</a></li>
+                                    <li><a href="/artbeat-entertainment/privacy-and-policy/index.html">Privacy
+                                            Policy</a></li>
+                                    <li><a href="/artbeat-entertainment/site-map/index.html">Site map</a></li>
+                                    <!-- <li><a href="/artbeat-entertainment/report-abuse/index.html">Report Abuse</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cls2">
+                            <div class="column2">
+                                <ul>
+                                    <li><a href="/artbeat-entertainment/careers/index.html">Career</a></li>
+                                    <li><a href="/artbeat-entertainment/blog/index.html">Blog</a></li>
+                                    <li><a href="/artbeat-entertainment/index.html">Team</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cls3">
+                            <div class="column3">
+                                <h1 id="foothead">About Us </h1>
+                                <p>At Artbeat Entertainment, we believe in creating best-in-class content to give the
+                                    finest experience to our viewers with passion and creativity.<br><a
+                                        href="/about-us/index.html" style="text-decoration: underline; color: #adadad;">
+                                        Get to know us → </a></p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cls4">
+                            <div class="column4">
+                                <div class="text-center">
+                                    <img src="img/artbeat-circle-logo.png" alt="LOGO"
+                                        width="50%" class="mb-2">
+                                    <p class="pt-2">Artbeat<br>Entertainment</p>
+                                    <ul>
+                                        <li>
+                                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fab fa-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-            <div class="footer_container">
-
-                <div class="footer">
-                    <div class="column1">
-                        <ul>
-                            <li><a href="/artbeat-entertainment/contact-us/contactus.html">Contact Us</a></li>
-                            <li><a href="/artbeat-entertainment/contact-us/cookies.html">Cookies and Preferences</a>
-                            </li>
-                            <li><a href="/artbeat-entertainment/privacy-and-policy/index.html">Privacy Policy</a></li>
-                            <li><a href="/artbeat-entertainment/site-map/index.html">Site map</a></li>
-                            <!-- <li><a href="/artbeat-entertainment/report-abuse/index.html">Report Abuse</a></li> -->
-                        </ul>
-                    </div>
-                    <div class="column2">
-                        <ul>
-                            <li><a href="/artbeat-entertainment/careers/index.html">Career</a></li>
-                            <li><a href="/artbeat-entertainment/blog/index.html">Blog</a></li>
-                            <li><a href="/artbeat-entertainment/index.html">Team</a></li>
-                        </ul>
-                    </div>
-                    <div class="column3">
-                        <h1 style="color: white;"> About Us </h1>
-                        <p>At Artbeat Entertainment, we believe in creating best-in-class content to give the finest
-                            experience
-                            to our viewers with passion and creativity.<br><a
-                                href="/artbeat-entertainment/about-us/index.html"
-                                style="text-decoration: underline; color: #adadad;"> Get to know us → </a></p>
-
-                    </div>
-                    <div class="column4">
-                        <div class="text-center">
-                            <img src="/images/artbeat-circle-logo.png" alt="LOGO" width="50%" class="mb-2">
-                            <ul>
-                                <li>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                </li>
-                            </ul>
+                            </div>
                         </div>
 
                     </div>
 
-                </div>
+                    <div class="footer_end">
+                        <p>Copyright © 2021 Artbeat Entertainment Pvt. Ltd. All rights reserved.</p>
+                    </div>
 
-                <div class="footer_end">
-                    <p>Copyright © 2021 Artbeat Entertainment Pvt. Ltd. All rights reserved.</p>
                 </div>
-
             </div>
+        </div>
 
-            <!-- jQuery -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <!-- Bootstrap JavaScript -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                crossorigin="anonymous"></script>
-            <!-- Ionicons JavaScript -->
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
-            <script>
-                //   all ------------------
-                function initParadoxWay() {
-                    "use strict";
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <!-- Ionicons JavaScript -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+        <script>
+            //   all ------------------
+            function initParadoxWay() {
+                "use strict";
 
-                    if ($(".testimonials-carousel").length > 0) {
-                        var j2 = new Swiper(".testimonials-carousel .swiper-container", {
-                            preloadImages: false,
-                            slidesPerView: 1,
-                            spaceBetween: 20,
-                            loop: true,
-                            grabCursor: true,
-                            mousewheel: false,
-                            centeredSlides: true,
-                            pagination: {
-                                el: '.tc-pagination',
-                                clickable: true,
-                                dynamicBullets: true,
+                if ($(".testimonials-carousel").length > 0) {
+                    var j2 = new Swiper(".testimonials-carousel .swiper-container", {
+                        preloadImages: false,
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                        loop: true,
+                        grabCursor: true,
+                        mousewheel: false,
+                        centeredSlides: true,
+                        pagination: {
+                            el: '.tc-pagination',
+                            clickable: true,
+                            dynamicBullets: true,
+                        },
+                        navigation: {
+                            nextEl: '.listing-carousel-button-next',
+                            prevEl: '.listing-carousel-button-prev',
+                        },
+                        breakpoints: {
+                            1024: {
+                                slidesPerView: 3,
                             },
-                            navigation: {
-                                nextEl: '.listing-carousel-button-next',
-                                prevEl: '.listing-carousel-button-prev',
-                            },
-                            breakpoints: {
-                                1024: {
-                                    slidesPerView: 3,
-                                },
 
-                            }
-                        });
-                    }
-
-                    // bubbles -----------------
-
-
-                    setInterval(function () {
-                        var size = randomValue(sArray);
-                        $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
-                        $('.individual-bubble').animate({
-                            'bottom': '100%',
-                            'opacity': '-=0.7'
-                        }, 4000, function () {
-                            $(this).remove()
-                        });
-                    }, 350);
-
+                        }
+                    });
                 }
 
-                //   Init All ------------------
-                $(document).ready(function () {
-                    initParadoxWay();
-                });
-            </script>
+                // bubbles -----------------
+
+
+                setInterval(function () {
+                    var size = randomValue(sArray);
+                    $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+                    $('.individual-bubble').animate({
+                        'bottom': '100%',
+                        'opacity': '-=0.7'
+                    }, 4000, function () {
+                        $(this).remove()
+                    });
+                }, 350);
+
+            }
+
+            //   Init All ------------------
+            $(document).ready(function () {
+                initParadoxWay();
+            });
+        </script>
 
 </body>
